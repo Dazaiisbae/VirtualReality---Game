@@ -48,5 +48,29 @@ Memory 07: Abandoned Moss City
 
 Memory 08: Glitch World
 
+Memory 09: Cat Street
+
+Memory 10: Candy World
+
+Memory 11: Summer
+
+Memory 12: Fall
+
+Memory 13: Spring
+
+Memory 14: Winter
+
+Memory 15: Rainy Park
+
+Memory 16: Boat on lake
+
+Memory 17: Flower Field  
+
+Memory 18: Picnic
+
+Memory 19: Abandoned Mall
+
+Memory 20: Graveyard
+
 More to come...
 ________________
