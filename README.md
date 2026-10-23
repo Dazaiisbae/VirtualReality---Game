@@ -8,7 +8,7 @@ Boot up a cube. Photograph a world. Uncover its story.
 
 ----------------
 
-You work in an archive room in the year 5904 Space Date(3,400,203 AD), Styled after the early 2000's. Its shelves are lined with glowing cubes, each holding the memory of a distant time. Slot the cubes into the console, press start, and the tv pulls you inside.
+You wake in an archive room aboard a stranded ship, Space Date 5904 (3,400,203 AD), its machine's built in the style of the early 2000s. Its shelves are lined with glowing cubes, each holding the memory from a distant time. You don’t remember how you got here, or where everyone else has gone.
 
 Once inside a memory, you take photographs of what you find. After each photo, the Archiver tells you a little about the world you just captured. When you're done, you return to the archive and choose another cube.
 
