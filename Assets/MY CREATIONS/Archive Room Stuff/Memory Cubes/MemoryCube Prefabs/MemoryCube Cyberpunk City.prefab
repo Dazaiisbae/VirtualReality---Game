@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8972519599719332730, guid: b71e42b590dd3f34ca58b09d6aa84ecd, type: 3}
+      propertyPath: memoryName
+      value: Memory001
+      objectReference: {fileID: 0}
     - target: {fileID: 1379583599225923867, guid: b71e42b590dd3f34ca58b09d6aa84ecd, type: 3}
       propertyPath: m_Name
       value: MemoryCube Cyberpunk City

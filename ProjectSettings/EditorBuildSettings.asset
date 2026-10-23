@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: 0e73b7578994e3948a1ff48e9f1c1a3d
+  - enabled: 1
     path: Assets/Scenes/Archive Room.unity
     guid: 92e40682591e93644999d448839cce59
+  - enabled: 1
+    path: Assets/Scenes/CyberPunk City.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 097d17960810ae0468382eba7a25bc2b, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: d02d0dbb599b26348af58d564e7a1c84, type: 2}

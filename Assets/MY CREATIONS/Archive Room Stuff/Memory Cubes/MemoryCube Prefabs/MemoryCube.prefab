@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4791598011467799652}
   - component: {fileID: 1769849022294835233}
   - component: {fileID: 4384521397432658872}
+  - component: {fileID: -8972519599719332730}
   m_Layer: 0
   m_Name: MemoryCube
   m_TagString: Untagged
@@ -234,3 +235,18 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-8972519599719332730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379583599225923867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d2525fc8ba3184abbb4713b7cc47de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryName: Memory 01
+  sceneName: Memory_CyberpunkCity
+  memoryColor: {r: 0, g: 1, b: 1, a: 1}
