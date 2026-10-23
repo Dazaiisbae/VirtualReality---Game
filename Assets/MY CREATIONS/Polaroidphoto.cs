@@ -27,6 +27,8 @@ public class PolaroidPhoto : MonoBehaviour
     public float wallGap = 0.005f;
     [Tooltip("Also stick when a thrown photo hits a sticky wall.")]
     public bool stickOnThrow = false;
+    [Tooltip("Straightens photos on walls to the nearest upright/sideways angle instead of keeping your hand's tilt.")]
+    public bool straighten = true;
     [Tooltip("Turn on if photos end up stuck with the picture facing the wall.")]
     public bool flipFacing = false;
     public AudioClip stickSound;
@@ -152,8 +154,21 @@ public class PolaroidPhoto : MonoBehaviour
     private Vector3 PhotoFront()
     {
         // A Unity Quad shows its picture on the side facing its -Z.
-        Vector3 front = photoRenderer != null ? -photoRenderer.transform.forward : transform.forward;
-        return flipFacing ? -front : front;
+        Vector3 quadFront = photoRenderer != null ? -photoRenderer.transform.forward : transform.forward;
+        if (flipFacing) quadFront = -quadFront;
+
+        // Use the frame's thinnest side as the true flat face, so it lies flush
+        // even if the photo Quad is rotated slightly inside the frame.
+        BoxCollider box = GetComponent<BoxCollider>();
+        if (box == null) return quadFront;
+
+        Vector3 size = Vector3.Scale(box.size, transform.lossyScale);
+        size = new Vector3(Mathf.Abs(size.x), Mathf.Abs(size.y), Mathf.Abs(size.z));
+        Vector3 axis = size.x <= size.y && size.x <= size.z ? transform.right
+                     : size.y <= size.z ? transform.up
+                     : transform.forward;
+
+        return Vector3.Dot(axis, quadFront) >= 0f ? axis : -axis;
     }
 
     private Vector3 PhotoUp()
@@ -211,9 +226,21 @@ public class PolaroidPhoto : MonoBehaviour
 
     private void StickTo(Vector3 point, Vector3 wallNormal)
     {
-        // Turn it flat against the wall, keeping whatever tilt you held it at.
+        // Turn it flat against the wall.
         transform.rotation = Quaternion.FromToRotation(PhotoFront(), wallNormal) * transform.rotation;
-        transform.position = point + wallNormal * wallGap;
+
+        // Snap the tilt to the nearest 90 degrees (skipped on floors and ceilings).
+        if (straighten && Mathf.Abs(Vector3.Dot(wallNormal, Vector3.up)) < 0.9f)
+        {
+            Vector3 wallUp = Vector3.ProjectOnPlane(Vector3.up, wallNormal).normalized;
+            Vector3 photoUp = Vector3.ProjectOnPlane(PhotoUp(), wallNormal).normalized;
+            float angle = Vector3.SignedAngle(photoUp, wallUp, wallNormal);
+            float correction = angle - 90f * Mathf.Round(angle / 90f);
+            transform.rotation = Quaternion.AngleAxis(correction, wallNormal) * transform.rotation;
+        }
+
+        transform.position = point;
+        PushOutOfWall(point, wallNormal);
 
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
@@ -223,6 +250,27 @@ public class PolaroidPhoto : MonoBehaviour
         isStuck = true;
 
         if (stickSound != null) AudioSource.PlayClipAtPoint(stickSound, point, 0.6f);
+    }
+
+    // Moves the photo out so its back sits exactly on the wall, whatever its thickness or pivot.
+    private void PushOutOfWall(Vector3 point, Vector3 wallNormal)
+    {
+        BoxCollider box = GetComponent<BoxCollider>();
+        if (box == null)
+        {
+            transform.position = point + wallNormal * wallGap;
+            return;
+        }
+
+        Vector3 half = Vector3.Scale(box.size * 0.5f, transform.lossyScale);
+        float backExtent =
+            Mathf.Abs(Vector3.Dot(wallNormal, transform.right)) * Mathf.Abs(half.x) +
+            Mathf.Abs(Vector3.Dot(wallNormal, transform.up)) * Mathf.Abs(half.y) +
+            Mathf.Abs(Vector3.Dot(wallNormal, transform.forward)) * Mathf.Abs(half.z);
+
+        Vector3 center = transform.TransformPoint(box.center);
+        float currentDistance = Vector3.Dot(center - point, wallNormal);
+        transform.position += wallNormal * (backExtent + wallGap - currentDistance);
     }
 
     void OnCollisionEnter(Collision collision)
