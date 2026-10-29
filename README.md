@@ -56,7 +56,7 @@ Once inside a memory, you take photographs of what you find. After each photo, t
 
 | # | Memory | Status |
 |---|---|---|
-| 01 | Cyberpunk City | In progress |
+| 01 | Cyberpunk City | Completed |
 | 02 | Beach | Planned |
 | 03 | Snowy Mountains | Planned |
 | 04 | Vaporwave Zone | Planned |
