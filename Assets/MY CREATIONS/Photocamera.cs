@@ -9,6 +9,8 @@ public class PhotoCamera : MonoBehaviour
     [Header("Capture")]
     [Tooltip("The RenderTexture your viewfinder camera renders into.")]
     public RenderTexture viewfinderTexture;
+    [Tooltip("The Camera that renders into the viewfinder texture. Used to check photo spots.")]
+    public Camera viewfinderCamera;
     [Tooltip("Seconds before you can take another photo.")]
     public float cooldown = 1.5f;
 
@@ -70,6 +72,10 @@ public class PhotoCamera : MonoBehaviour
         yield return new WaitForEndOfFrame();
         Texture2D photo = CaptureViewfinder();
 
+        // Check if this shot framed a story photo spot.
+        PhotoSpot spot = null;
+        if (viewfinderCamera != null) spot = PhotoSpot.TryCapture(viewfinderCamera);
+
         if (shutterSound != null) audioSource.PlayOneShot(shutterSound);
         if (flashLight != null) StartCoroutine(FlashRoutine());
 
@@ -95,6 +101,9 @@ public class PhotoCamera : MonoBehaviour
         // It sticks out of the camera until you grab it.
         polaroid.SetGrabbable(true, cameraColliders);
         polaroid.StartDeveloping();
+
+        // Archiver prints its line for the captured spot.
+        if (spot != null && ArchiverText.Instance != null) ArchiverText.Instance.Show(spot, polaroid);
 
         onPhotoTaken.Invoke();
     }
