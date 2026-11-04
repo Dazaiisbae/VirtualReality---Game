@@ -93,15 +93,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a7dd65060cc909d49b30bce24db6461c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.80352134
+      value: 0.5189683
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7dd65060cc909d49b30bce24db6461c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 23.986
+      value: 15.491777
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7dd65060cc909d49b30bce24db6461c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 23.986
+      value: 15.491777
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7dd65060cc909d49b30bce24db6461c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -392,6 +392,7 @@ MonoBehaviour:
   stickDistance: 0.3
   wallGap: 0.001
   stickOnThrow: 1
+  straighten: 1
   flipFacing: 0
   stickSound: {fileID: 0}
 --- !u!4 &4498084264075543564 stripped
