@@ -342,6 +342,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &39510464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39510466}
+  - component: {fileID: 39510465}
+  m_Layer: 0
+  m_Name: PhotoSpot 3 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &39510465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39510464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 3
+  archiverLine: We are in space. beautiful
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1476869730}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!4 &39510466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39510464}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 265.46, y: 68.42545, z: 52.847}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &67070667 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 311841332178447967, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
@@ -661,6 +734,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 947754443}
     m_Modifications:
     - target: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+      propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 205307396}
@@ -908,6 +985,10 @@ Transform:
   - {fileID: 913116272}
   - {fileID: 791984238}
   - {fileID: 1878438676}
+  - {fileID: 766976960}
+  - {fileID: 864894394}
+  - {fileID: 1466522925}
+  - {fileID: 39510466}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &300235888
@@ -1286,6 +1367,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 331436911}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &342243726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 331436911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &351113392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1890,6 +1982,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 947754443}
     m_Modifications:
     - target: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+      propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 205307396}
@@ -2020,7 +2116,19 @@ MonoBehaviour:
   photosNeeded: 3
   onReached:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8009524401978307154}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &589980998
 Transform:
   m_ObjectHideFlags: 0
@@ -2538,6 +2646,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &766976959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766976960}
+  - component: {fileID: 766976961}
+  m_Layer: 0
+  m_Name: PhotoSpot 3 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766976960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766976959}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 256.526, y: 68.42545, z: 53.079}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766976961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766976959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 3
+  archiverLine: We are in space. beautiful
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 342243726}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &791984236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,6 +2973,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 1827725287}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &842748033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 1827725287}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &847431718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,6 +3099,79 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!1 &864894393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864894394}
+  - component: {fileID: 864894395}
+  m_Layer: 0
+  m_Name: PhotoSpot 3 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &864894394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864894393}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 256.5, y: 68.42545, z: 48.526}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &864894395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864894393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 3
+  archiverLine: We are in space. beautiful
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1841164366}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &867192648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,25 +5166,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enforceOrder: 1
-  requiredCount: 3
+  requiredCount: 7
   onProgress:
     m_PersistentCalls:
       m_Calls: []
   onAllCaptured:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8009524401978307154}
-        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
-        m_MethodName: Unlock
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   replayEventsWhenLoaded: 1
 --- !u!4 &1438510511
 Transform:
@@ -4936,11 +5189,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1466522924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466522925}
+  - component: {fileID: 1466522926}
+  m_Layer: 0
+  m_Name: PhotoSpot 3 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466522925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466522924}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 265.28, y: 68.42545, z: 48.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466522926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466522924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 3
+  archiverLine: We are in space. beautiful
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 842748033}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!4 &1476869729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 202488765}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1476869730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 202488765}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1481349862 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6361968886011487649, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
@@ -6044,9 +6381,36 @@ MonoBehaviour:
   - {fileID: 913116271}
   - {fileID: 791984237}
   - {fileID: 1878438675}
+  - {fileID: 766976961}
+  - {fileID: 864894395}
+  - {fileID: 1466522926}
+  - {fileID: 39510465}
   onUnlock:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1702773690}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1702773690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 228936059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228936060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1717027811
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,6 +6924,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+--- !u!114 &1841164366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 489049117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1845982051
 GameObject:
   m_ObjectHideFlags: 0
