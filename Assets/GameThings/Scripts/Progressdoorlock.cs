@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-// Put this on any door that needs completed memories (cockpit now, others later).
-// Doors that only need photos can keep using PhotoMilestone or On Captured.
+// Put this on any door that opens from progress.
+// All three checks must pass. Leave any of them empty / 0 to skip it.
 public class ProgressDoorLock : MonoBehaviour
 {
-    [Tooltip("How many memory worlds must be completed.")]
-    public int memoriesRequired = 1;
+    [Tooltip("Specific memory cubes whose worlds must be completed. Drag the cube objects in.")]
+    public MemoryCube[] requiredMemories;
 
-    [Tooltip("Photo spots in this scene that must also be captured. Drag the spot objects in.")]
+    [Tooltip("Extra: how many memory worlds must be completed in total (any worlds). Usually 0.")]
+    public int memoriesRequired = 0;
+
+    [Tooltip("Photo spots that must be captured. Drag the spot objects in.")]
     public PhotoSpot[] requiredSpots;
 
     [Tooltip("Drag your sliding door here and pick Unlock.")]
@@ -24,7 +27,12 @@ public class ProgressDoorLock : MonoBehaviour
     void Check()
     {
         if (unlocked) return;
+
+        foreach (var cube in requiredMemories)
+            if (cube != null && !GameProgress.IsWorldComplete(cube.sceneName)) return;
+
         if (GameProgress.CompletedCount < memoriesRequired) return;
+
         foreach (var spot in requiredSpots)
             if (spot != null && !spot.Captured) return;
 

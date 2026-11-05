@@ -103,6 +103,11 @@ public class ConsoleMemoryLoader : MonoBehaviour
         // The real scene load has already begun (a split second at the very end): too late to cancel.
         if (sceneLoadStarted) return;
 
+        // Player pulled the cube out: it's no longer saved as "in the console".
+        MemoryCube removed = args.interactableObject.transform.GetComponentInParent<MemoryCube>();
+        if (removed != null && GameProgress.IsCubeInConsole(removed.sceneName))
+            GameProgress.SetCubeInConsole(null);
+
         if (isLoading)
         {
             // Cube pulled out during the loading screen: cancel and stay in the archive room.
@@ -172,6 +177,8 @@ public class ConsoleMemoryLoader : MonoBehaviour
 
         // Save the archive room (polaroid positions, pinned photos) before leaving.
         // Done here, after the cancel window, so a cancelled load doesn't save early.
+        GameProgress.MarkCubeCollected(cube.sceneName);
+        GameProgress.SetCubeInConsole(cube.sceneName);
         SaveArchiveRoom();
 
         Debug.Log($"Loading {cube.memoryName} -> {cube.sceneName}");

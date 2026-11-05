@@ -4,8 +4,9 @@ using UnityEngine;
 // The world counts as complete when that scene's PhotoSpotManager is complete.
 public class MemoryWorldPersistence : MonoBehaviour
 {
-    [Tooltip("Unique name for this world, e.g. CyberpunkCity")]
-    public string worldID = "CyberpunkCity";
+    // The world's ID is its scene name, the same name the memory cube loads.
+    // That way cubes and doors can check completion without typing any IDs.
+    string worldID => gameObject.scene.name;
 
     bool completed;
 

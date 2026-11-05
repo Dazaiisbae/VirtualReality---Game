@@ -24,6 +24,8 @@ public static class GameProgress
         public List<string> completedWorlds = new List<string>();
         public List<string> capturedSpots = new List<string>();
         public List<PolaroidRecord> polaroids = new List<PolaroidRecord>();
+        public List<string> collectedCubes = new List<string>();
+        public string cubeInConsole;   // cube left plugged in when entering a memory
     }
 
     static SaveData data;
@@ -40,17 +42,56 @@ public static class GameProgress
 
     static SaveData Data
     {
-        get { if (data == null) Load(); return data; }
+        get
+        {
+            if (data == null) Load();
+            // Older saves may be missing newer lists
+            if (data.completedWorlds == null) data.completedWorlds = new List<string>();
+            if (data.capturedSpots == null) data.capturedSpots = new List<string>();
+            if (data.polaroids == null) data.polaroids = new List<PolaroidRecord>();
+            if (data.collectedCubes == null) data.collectedCubes = new List<string>();
+            return data;
+        }
     }
+
+    // World/cube IDs ignore capitals and extra spaces,
+    // so "CyberPunk City" and "Cyberpunk City" count as the same world.
+    static string Norm(string id) => string.IsNullOrEmpty(id) ? "" : id.Trim().ToLowerInvariant();
 
     // ---------- Worlds ----------
     public static int CompletedCount => Data.completedWorlds.Count;
-    public static bool IsWorldComplete(string id) => Data.completedWorlds.Contains(id);
+    public static bool IsWorldComplete(string id) => Data.completedWorlds.Contains(Norm(id));
 
     public static void CompleteWorld(string id)
     {
+        id = Norm(id);
         if (Data.completedWorlds.Contains(id)) return;
         Data.completedWorlds.Add(id);
+        Save();
+    }
+
+    // ---------- Memory cubes ----------
+    // A cube is "collected" once it has been loaded in the console.
+    // From then on it lives on the archive shelf instead of the room it was found in.
+    public static bool IsCubeCollected(string id) => Data.collectedCubes.Contains(Norm(id));
+
+    public static void MarkCubeCollected(string id)
+    {
+        id = Norm(id);
+        if (id == "" || Data.collectedCubes.Contains(id)) return;
+        Data.collectedCubes.Add(id);
+        Save();
+    }
+
+    // The cube currently sitting in the console (empty = none).
+    public static string CubeInConsole => Data.cubeInConsole;
+    public static bool IsCubeInConsole(string id) => !string.IsNullOrEmpty(Data.cubeInConsole) && Data.cubeInConsole == Norm(id);
+
+    public static void SetCubeInConsole(string id)
+    {
+        id = string.IsNullOrEmpty(id) ? null : Norm(id);
+        if (Data.cubeInConsole == id) return;
+        Data.cubeInConsole = id;
         Save();
     }
 
