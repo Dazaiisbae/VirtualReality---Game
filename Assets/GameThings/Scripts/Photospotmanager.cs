@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -18,6 +19,11 @@ public class PhotoSpotManager : MonoBehaviour
     [Tooltip("Fires once when all required photos are taken.")]
     public UnityEvent onAllCaptured;
 
+    [Header("Saving")]
+    [Tooltip("When loading back in with saved photos, fire On Progress (current count) and " +
+             "On All Captured (if complete) so doors and beams return to the right state.")]
+    public bool replayEventsWhenLoaded = true;
+
     public int CapturedCount { get; private set; }
     public bool Complete => CapturedCount >= requiredCount;
 
@@ -28,12 +34,38 @@ public class PhotoSpotManager : MonoBehaviour
         Instance = this;
     }
 
+    IEnumerator Start()
+    {
+        // Spots restore themselves in Awake, so by now Captured is correct.
+        CapturedCount = 0;
+        foreach (var spot in PhotoSpot.Active)
+            if (spot.Captured) CapturedCount++;
+
+        if (CapturedCount > 0)
+            Debug.Log("[PhotoSpotManager] Restored " + CapturedCount + "/" + requiredCount + " from save");
+
+        // Wait one frame so doors finish their own Start before we unlock them.
+        yield return null;
+
+        if (replayEventsWhenLoaded && CapturedCount > 0)
+        {
+            onProgress.Invoke(CapturedCount);
+            if (Complete) onAllCaptured.Invoke();
+        }
+    }
+
     void OnDestroy() { if (Instance == this) Instance = null; }
 
+    // A spot can be captured once every spot with a LOWER story order is captured.
+    // Spots sharing the same order (e.g. three spots at 3) can be taken in any order.
+    // Gaps in numbering (1, 2, 5) are fine too.
     public bool CanCapture(PhotoSpot spot)
     {
         if (!enforceOrder || spot.storyOrder <= 0) return true;
-        return spot.storyOrder == CapturedCount + 1;
+        foreach (var other in PhotoSpot.Active)
+            if (!other.Captured && other.storyOrder > 0 && other.storyOrder < spot.storyOrder)
+                return false;
+        return true;
     }
 
     public void NotifyCaptured(PhotoSpot spot)

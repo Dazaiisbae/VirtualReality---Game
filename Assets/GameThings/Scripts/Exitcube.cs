@@ -75,6 +75,7 @@ public class ExitCube : MonoBehaviour
             if (holdTimer >= holdDuration)
             {
                 done = true;
+                SaveBeforeExit();
                 onExit.Invoke();
             }
         }
@@ -86,6 +87,15 @@ public class ExitCube : MonoBehaviour
 
         if (visual != null)
             visual.localScale = startScale * Mathf.Lerp(1f, endScale, Progress);
+    }
+
+    // Saves world completion and collects this world's polaroids for the archive tray.
+    // Runs before On Exit, so it happens before the archive room starts loading.
+    void SaveBeforeExit()
+    {
+        var world = FindObjectOfType<MemoryWorldPersistence>();
+        if (world != null) world.ExitWorld();
+        else Debug.LogWarning("[ExitCube] No MemoryWorldPersistence in this scene, so nothing was saved.");
     }
 
     float Progress => Mathf.Clamp01(holdTimer / holdDuration);

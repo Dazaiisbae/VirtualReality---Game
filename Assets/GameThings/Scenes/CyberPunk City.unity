@@ -830,6 +830,7 @@ MonoBehaviour:
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
+  replayOnCapturedWhenLoaded: 1
   debugLog: 1
 --- !u!1 &693319794
 GameObject:
@@ -890,6 +891,7 @@ MonoBehaviour:
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
+  replayOnCapturedWhenLoaded: 1
   debugLog: 1
 --- !u!1 &708340376 stripped
 GameObject:
@@ -980,6 +982,7 @@ MonoBehaviour:
   onAllCaptured:
     m_PersistentCalls:
       m_Calls: []
+  replayEventsWhenLoaded: 1
 --- !u!4 &743436278
 Transform:
   m_ObjectHideFlags: 0
@@ -1182,6 +1185,7 @@ MonoBehaviour:
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
+  replayOnCapturedWhenLoaded: 1
   debugLog: 1
 --- !u!1 &866987033 stripped
 GameObject:
@@ -2034,6 +2038,51 @@ Transform:
   - {fileID: 1200514090}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1579142052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579142054}
+  - component: {fileID: 1579142053}
+  m_Layer: 0
+  m_Name: WorldPersistence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1579142053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579142052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46169e30a975a7140a79ec108ced8564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldID: CyberpunkCity
+--- !u!4 &1579142054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579142052}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 485.9417, y: 768.3948, z: -790.8678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780643674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8022602954211759197, guid: e82eecd34b86f6e4286718e8c98529fa, type: 3}
@@ -2694,3 +2743,4 @@ SceneRoots:
   - {fileID: 2121192450}
   - {fileID: 987618560}
   - {fileID: 9240362}
+  - {fileID: 1579142054}
