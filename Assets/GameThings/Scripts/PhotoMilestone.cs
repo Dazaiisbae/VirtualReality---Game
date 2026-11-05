@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,10 +8,14 @@ public class PhotoMilestone : MonoBehaviour
     public UnityEvent onReached;
     bool done;
 
-    void Start()
+    IEnumerator Start()
     {
         foreach (var spot in PhotoSpot.Active)
             spot.onCaptured.AddListener(Check);
+
+        // Wait one frame, then check saved photos so milestone doors re-open on load.
+        yield return null;
+        Check();
     }
 
     void Check()

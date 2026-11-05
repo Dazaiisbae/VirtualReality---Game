@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -36,13 +37,45 @@ public class PhotoSpot : MonoBehaviour
     [Header("Events")]
     public UnityEvent onCaptured;
 
+    [Header("Saving")]
+    [Tooltip("When loading back in, fire On Captured again so doors wired to it re-open. " +
+             "Turn OFF if On Captured also plays sounds or effects you don't want repeated.")]
+    public bool replayOnCapturedWhenLoaded = true;
+
     [Header("Debug")]
     public bool debugLog = true;
 
     public bool Captured { get; private set; }
+    public bool RestoredFromSave { get; private set; }
+
+    /// Unique save name, made automatically from the scene and object name.
+    /// Keep object names unique within a scene (e.g. Spot_Console, Spot_Window).
+    public string SaveKey => gameObject.scene.name + "/" + gameObject.name;
 
     void OnEnable()  { if (!Active.Contains(this)) Active.Add(this); }
     void OnDisable() { Active.Remove(this); }
+
+    void Awake()
+    {
+        // Runs before every Start, so the manager counts restored spots correctly.
+        if (GameProgress.IsSpotCaptured(SaveKey))
+        {
+            Captured = true;
+            RestoredFromSave = true;
+            if (debugLog) Debug.Log("[PhotoSpot] " + spotId + " restored from save");
+        }
+    }
+
+    IEnumerator Start()
+    {
+        foreach (var other in Active)
+            if (other != this && other.gameObject.scene == gameObject.scene && other.gameObject.name == gameObject.name)
+                Debug.LogWarning("[PhotoSpot] Two spots are named '" + gameObject.name + "'. Rename one or they'll share a save.");
+
+        // Wait one frame so doors finish their own Start before we unlock them.
+        yield return null;
+        if (RestoredFromSave && replayOnCapturedWhenLoaded) onCaptured.Invoke();
+    }
 
     /// Call this from PhotoCamera at the moment of capture.
     /// Returns the spot that got captured, or null if none.
@@ -114,12 +147,13 @@ public class PhotoSpot : MonoBehaviour
     void MarkCaptured()
     {
         Captured = true;
+        GameProgress.MarkSpotCaptured(SaveKey);
         if (debugLog) Debug.Log("[PhotoSpot] " + spotId + " CAPTURED");
         onCaptured.Invoke();
         if (PhotoSpotManager.Instance != null) PhotoSpotManager.Instance.NotifyCaptured(this);
     }
 
-    public void ResetSpot() { Captured = false; }
+    public void ResetSpot() { Captured = false; RestoredFromSave = false; }
 
     void OnDrawGizmos()
     {

@@ -169,6 +169,11 @@ public class ConsoleMemoryLoader : MonoBehaviour
         // which is why it waits until the loading screen is finished.
         sceneLoadStarted = true;
         LastLoadedMemory = cube.memoryName;
+
+        // Save the archive room (polaroid positions, pinned photos) before leaving.
+        // Done here, after the cancel window, so a cancelled load doesn't save early.
+        SaveArchiveRoom();
+
         Debug.Log($"Loading {cube.memoryName} -> {cube.sceneName}");
 
         AsyncOperation op = SceneManager.LoadSceneAsync(cube.sceneName);
@@ -180,6 +185,13 @@ public class ConsoleMemoryLoader : MonoBehaviour
             yield break;
         }
         while (!op.isDone) yield return null;
+    }
+
+    private void SaveArchiveRoom()
+    {
+        var room = FindObjectOfType<ArchiveRoomPersistence>();
+        if (room != null) room.SaveRoom();
+        else Debug.LogWarning("[Console] No ArchiveRoomPersistence in this scene, so the archive room wasn't saved.");
     }
 
     // ---------- Errors ----------

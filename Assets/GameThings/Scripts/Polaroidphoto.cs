@@ -41,6 +41,12 @@ public class PolaroidPhoto : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 heldVelocity;
 
+    // Read by the save system so pinned photos stay pinned.
+    public bool IsStuck => isStuck;
+
+    // The photo currently showing (used by the save system).
+    public Texture2D CurrentPhoto => photoMat != null ? photoMat.mainTexture as Texture2D : null;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -83,6 +89,26 @@ public class PolaroidPhoto : MonoBehaviour
     public void StartDeveloping()
     {
         if (developTime > 0f && photoMat != null) StartCoroutine(DevelopRoutine());
+    }
+
+    // ---------- Saving ----------
+
+    // Rebuilds a saved polaroid: already developed, grabbable, and either
+    // pinned in place (stuck) or dropped with normal physics.
+    public void RestoreFromSave(Texture2D photo, bool stuck)
+    {
+        if (photoMat != null) photoMat.mainTexture = photo;
+        SetTint(Color.white);   // fully developed, no fade
+        SetGrabbable(true);     // colliders on + ignore player body (leaves it kinematic)
+
+        isStuck = stuck;
+        if (!stuck && rb != null)
+        {
+            rb.isKinematic = false;
+            rb.useGravity = true;
+            rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+            rb.interpolation = RigidbodyInterpolation.Interpolate;
+        }
     }
 
     // alsoIgnore: the camera's colliders. If the photo and camera can touch,
