@@ -5,6 +5,7 @@ using UnityEngine.Events;
 /// One per scene (ship, or each memory world).
 /// Tracks how many story photos are done and fires events you wire in the Inspector:
 /// dialogue, beam brightness, door unlocks, etc.
+/// Also tells PhotoHintIndicator which spot to guide the player toward.
 public class PhotoSpotManager : MonoBehaviour
 {
     public static PhotoSpotManager Instance { get; private set; }
@@ -66,6 +67,26 @@ public class PhotoSpotManager : MonoBehaviour
             if (!other.Captured && other.storyOrder > 0 && other.storyOrder < spot.storyOrder)
                 return false;
         return true;
+    }
+
+    /// The spot the camera hint should point toward, or null if none.
+    /// Uses CanCapture, so it follows story order: the next spot in sequence,
+    /// or the nearest one if several share the same order.
+    public PhotoSpot GetHintTarget(Vector3 fromPos)
+    {
+        PhotoSpot best = null;
+        float bestDist = float.MaxValue;
+
+        foreach (var spot in PhotoSpot.Active)
+        {
+            if (spot.Captured || !spot.showHint) continue;
+            if (!CanCapture(spot)) continue;
+            if (!spot.InHintArea(fromPos)) continue;
+
+            float d = Vector3.Distance(fromPos, spot.transform.position);
+            if (d < bestDist) { bestDist = d; best = spot; }
+        }
+        return best;
     }
 
     public void NotifyCaptured(PhotoSpot spot)

@@ -34,6 +34,13 @@ public class PhotoSpot : MonoBehaviour
     [Tooltip("Optional extra points that must ALSO be in frame (for big subjects).")]
     public Transform[] extraFramePoints;
 
+    [Header("Hint")]
+    [Tooltip("If on, the camera's LED/tick/haptics guide the player toward this spot. Turn off for secret bonus spots.")]
+    public bool showHint = true;
+    [Tooltip("Optional. A trigger box covering the room this spot is in (put it on the Ignore Raycast layer). " +
+             "Hints only work while the camera is inside it, so the camera doesn't ping through walls.")]
+    public Collider hintArea;
+
     [Header("Events")]
     public UnityEvent onCaptured;
 
@@ -98,7 +105,11 @@ public class PhotoSpot : MonoBehaviour
         return best;
     }
 
-    public bool IsFramedBy(Camera cam, out float centerDist)
+    /// True if the camera's position is inside this spot's hint area (or no area is set).
+    public bool InHintArea(Vector3 pos) => hintArea == null || hintArea.bounds.Contains(pos);
+
+    /// log = false is used by PhotoHintIndicator so its frequent checks don't spam the console.
+    public bool IsFramedBy(Camera cam, out float centerDist, bool log = true)
     {
         centerDist = float.MaxValue;
         Vector3 camPos = cam.transform.position;
@@ -106,25 +117,25 @@ public class PhotoSpot : MonoBehaviour
 
         // Distance
         float dist = Vector3.Distance(camPos, target);
-        if (dist > maxDistance || dist < minDistance) return Fail("out of range (" + dist.ToString("F1") + "m)");
+        if (dist > maxDistance || dist < minDistance) return Fail("out of range (" + dist.ToString("F1") + "m)", log);
 
         // In frame
-        if (!InFrame(cam, target, out Vector3 vp)) return Fail("not in frame");
+        if (!InFrame(cam, target, out Vector3 vp)) return Fail("not in frame", log);
         foreach (var p in extraFramePoints)
-            if (p != null && !InFrame(cam, p.position, out _)) return Fail("subject cut off");
+            if (p != null && !InFrame(cam, p.position, out _)) return Fail("subject cut off", log);
 
         // Shooting angle
         if (maxViewAngle < 180f)
         {
             float angle = Vector3.Angle(transform.forward, camPos - target);
-            if (angle > maxViewAngle) return Fail("bad angle (" + angle.ToString("F0") + "°)");
+            if (angle > maxViewAngle) return Fail("bad angle (" + angle.ToString("F0") + "°)", log);
         }
 
         // Something in the way
         if (requireLineOfSight &&
             Physics.Linecast(camPos, target, out RaycastHit hit, occlusionMask, QueryTriggerInteraction.Ignore) &&
             !hit.transform.IsChildOf(transform))
-            return Fail("blocked by " + hit.collider.name);
+            return Fail("blocked by " + hit.collider.name, log);
 
         centerDist = new Vector2(vp.x - 0.5f, vp.y - 0.5f).magnitude;
         return true;
@@ -138,9 +149,9 @@ public class PhotoSpot : MonoBehaviour
                vp.y > screenMargin && vp.y < 1f - screenMargin;
     }
 
-    bool Fail(string reason)
+    bool Fail(string reason, bool log)
     {
-        if (debugLog) Debug.Log("[PhotoSpot] " + spotId + " missed: " + reason);
+        if (debugLog && log) Debug.Log("[PhotoSpot] " + spotId + " missed: " + reason);
         return false;
     }
 
@@ -165,6 +176,12 @@ public class PhotoSpot : MonoBehaviour
         {
             Gizmos.color = Color.blue;
             Gizmos.DrawRay(transform.position, transform.forward * 1f);
+        }
+        if (hintArea != null)
+        {
+            Gizmos.color = new Color(1f, 0.6f, 0f, 0.3f);
+            Bounds b = hintArea.bounds;
+            Gizmos.DrawWireCube(b.center, b.size);
         }
     }
 }
