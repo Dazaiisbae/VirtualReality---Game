@@ -3932,7 +3932,7 @@ GameObject:
   - component: {fileID: 857360158}
   - component: {fileID: 857360159}
   m_Layer: 0
-  m_Name: PhotoSpot 12
+  m_Name: PhotoSpot 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3951,7 +3951,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1239677058}
+  m_Father: {fileID: 925794099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &857360159
 MonoBehaviour:
@@ -4397,6 +4397,8 @@ Transform:
   - {fileID: 913116272}
   - {fileID: 1878438676}
   - {fileID: 791984238}
+  - {fileID: 857360158}
+  - {fileID: 1944540579}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925822185
@@ -5996,7 +5998,6 @@ Transform:
   - {fileID: 925822186}
   - {fileID: 637734690}
   - {fileID: 246559863}
-  - {fileID: 857360158}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281358624
@@ -7757,6 +7758,7 @@ PrefabInstance:
     - {fileID: 7579984104740295993, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     - {fileID: 6320301419972642092, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     - {fileID: -284640640695791788, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+    - {fileID: 7234890677712916648, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
@@ -8936,7 +8938,6 @@ Transform:
   - {fileID: 835700567}
   - {fileID: 1095498121}
   - {fileID: 70807294}
-  - {fileID: 1944540579}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1865425764
@@ -9474,7 +9475,7 @@ GameObject:
   - component: {fileID: 1944540579}
   - component: {fileID: 1944540580}
   m_Layer: 0
-  m_Name: PhotoSpot 25
+  m_Name: PhotoSpot 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9493,7 +9494,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1852290858}
+  m_Father: {fileID: 925794099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1944540580
 MonoBehaviour:
