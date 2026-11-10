@@ -399,7 +399,7 @@ Transform:
   m_GameObject: {fileID: 39510464}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.924, y: 67.046, z: 43.116}
+  m_LocalPosition: {x: 258.595, y: 67.046, z: 43.427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -436,7 +436,7 @@ Transform:
   m_GameObject: {fileID: 70807293}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 261.318, y: 68.42545, z: 48.58}
+  m_LocalPosition: {x: 250.773, y: 68.657, z: 58.276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -490,7 +490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &86685803
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -550,7 +550,7 @@ Transform:
   m_GameObject: {fileID: 86685801}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0.7071068, z: -0.000000029802322, w: 0}
-  m_LocalPosition: {x: -0.09704902, y: -0.061927922, z: -0.04075956}
+  m_LocalPosition: {x: -0.094, y: -0.061927922, z: -0.04075956}
   m_LocalScale: {x: -0.3685651, y: -0.41109645, z: -0.25922447}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -693,7 +693,7 @@ Transform:
   m_GameObject: {fileID: 159658914}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 267.17, y: 68.93, z: 42.53}
+  m_LocalPosition: {x: 267.17, y: 68.93, z: 42.534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 13
-  archiverLine: They packed everything onto the shuttle. They planned this
+  archiverLine: They packed everything. They planned this
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -1129,7 +1129,7 @@ Transform:
   m_GameObject: {fileID: 246559862}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.59, y: 68.42545, z: 53.074}
+  m_LocalPosition: {x: 254.63, y: 68.78, z: 53.074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1463,11 +1463,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4317572713996208678, guid: 127fc881987bb8a47a7b1709925d32b8, type: 3}
   m_PrefabInstance: {fileID: 1788939086}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &315465647 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 454775743690840055, guid: 5489e92f34469804fb799719c076a319, type: 3}
-  m_PrefabInstance: {fileID: 5197370877706124626}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &320578329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,6 +1711,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 331436911}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &342243726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 331436911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473179348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &345812464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6913582182513628784, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
@@ -2404,7 +2410,19 @@ MonoBehaviour:
   - {fileID: 1891736821}
   onUnlock:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 342243726}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &485365043 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6028722778095525775, guid: 5489e92f34469804fb799719c076a319, type: 3}
@@ -2585,7 +2603,7 @@ Transform:
   m_GameObject: {fileID: 559751459}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 259.724, y: 67.674, z: 60.493}
+  m_LocalPosition: {x: 259.62, y: 67.636, z: 60.487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2605,7 +2623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 19
-  archiverLine: 
+  archiverLine: ...
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3405,7 +3423,7 @@ Transform:
   m_GameObject: {fileID: 766976959}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 261.14, y: 69.93, z: 53.079}
+  m_LocalPosition: {x: 260.59, y: 68.411, z: 53.079}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3458,7 +3476,7 @@ GameObject:
   - component: {fileID: 791984238}
   - component: {fileID: 791984237}
   m_Layer: 0
-  m_Name: PhotoSpot 2
+  m_Name: PhotoSpot 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3477,8 +3495,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: Memories
-  storyOrder: 2
-  archiverLine: That would explain a lot
+  storyOrder: 3
+  archiverLine: That would explain a lot. Last activation seven days ago? Did I wake
+    up before?
   maxDistance: 5.03
   minDistance: 0.3
   screenMargin: 0.15
@@ -3729,7 +3748,7 @@ Transform:
   m_GameObject: {fileID: 835700566}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 270.18, y: 67.35, z: 46.307}
+  m_LocalPosition: {x: 267.018, y: 67.072, z: 44.434}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3771,6 +3790,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 1827725287}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &842748033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 1827725287}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963077233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &847431718
 GameObject:
   m_ObjectHideFlags: 0
@@ -3917,7 +3947,7 @@ Transform:
   m_GameObject: {fileID: 857360157}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.791, y: 68.135, z: 41.877}
+  m_LocalPosition: {x: 260.077, y: 67.896, z: 41.639}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3937,7 +3967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 12
-  archiverLine: These tools are for the head. Same place the headset goes.
+  archiverLine: These tools are for the head.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3980,7 +4010,7 @@ Transform:
   m_GameObject: {fileID: 864894393}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 254.68, y: 70.24, z: 51.005}
+  m_LocalPosition: {x: 268.9, y: 69.169, z: 53.064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4303,7 +4333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: Console
   storyOrder: 1
-  archiverLine: I woke up in here, I don't know how long I was asleep for..
+  archiverLine: I woke up in here, every part of me aches.
   maxDistance: 5.51
   minDistance: 0.3
   screenMargin: 0.15
@@ -4365,8 +4395,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 913116272}
-  - {fileID: 791984238}
   - {fileID: 1878438676}
+  - {fileID: 791984238}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925822185
@@ -4595,7 +4625,19 @@ MonoBehaviour:
   - {fileID: 857360159}
   onUnlock:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 842748033}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &964845435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5130,7 +5172,7 @@ Transform:
   m_GameObject: {fileID: 1024903732}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 281.95, y: 69.064, z: 50.042}
+  m_LocalPosition: {x: 282.511, y: 67.991, z: 51.021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5150,7 +5192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 34
-  archiverLine: 'IDENTITY: CONFIRMED'
+  archiverLine: That is my name. Is this me?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -5907,7 +5949,7 @@ MonoBehaviour:
   warmInterval: 1.4
   hotIntervalFar: 0.7
   hotIntervalNear: 0.25
-  ledRenderer: {fileID: 315465647}
+  ledRenderer: {fileID: 1418362222}
   ledColor: {r: 0, g: 0.9, b: 1, a: 1}
   idleBrightness: 0.05
   pulseBrightness: 2
@@ -6284,7 +6326,7 @@ Transform:
   m_GameObject: {fileID: 1334843858}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 228.39, y: 66.949, z: 50.204}
+  m_LocalPosition: {x: 229.24, y: 70.21, z: 55.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6499,6 +6541,11 @@ MonoBehaviour:
       m_Calls: []
   replayOnCapturedWhenLoaded: 1
   debugLog: 1
+--- !u!23 &1418362222 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 454775743690840055, guid: 5489e92f34469804fb799719c076a319, type: 3}
+  m_PrefabInstance: {fileID: 5197370877706124626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1424571190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,7 +6719,7 @@ Transform:
   m_GameObject: {fileID: 1450010558}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 225.30228, y: 68.52945, z: 50.521942}
+  m_LocalPosition: {x: 225.30228, y: 68.52945, z: 50.391}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6798,7 +6845,7 @@ Transform:
   m_GameObject: {fileID: 1466522924}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 274.44, y: 69.1, z: 48.6}
+  m_LocalPosition: {x: 274.44, y: 68.484, z: 48.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6846,6 +6893,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 202488765}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1476869730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 202488765}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745112486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1476869731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6870,7 +6928,19 @@ MonoBehaviour:
   - {fileID: 1944540580}
   onUnlock:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1476869730}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &1481349862 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6361968886011487649, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
@@ -8015,7 +8085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 33
-  archiverLine: Still no face.
+  archiverLine: Still no idea who I am..
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -8926,7 +8996,7 @@ Transform:
   m_GameObject: {fileID: 1868421593}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 268.611, y: 68.42545, z: 48.459}
+  m_LocalPosition: {x: 272.521, y: 68.72, z: 48.459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8946,7 +9016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 17
-  archiverLine: Five years. And seven of them, not eight.
+  archiverLine: Five years. And seven of them, not eight THEY LEFT ME
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9059,7 +9129,7 @@ GameObject:
   - component: {fileID: 1878438676}
   - component: {fileID: 1878438675}
   m_Layer: 0
-  m_Name: PhotoSpot 3
+  m_Name: PhotoSpot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9078,7 +9148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 3
+  storyOrder: 2
   archiverLine: Who am I?
   maxDistance: 3.95
   minDistance: 0.3
@@ -9105,7 +9175,7 @@ Transform:
   m_GameObject: {fileID: 1878438674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.506, y: 68.168, z: 47.479}
+  m_LocalPosition: {x: 256.233, y: 68.352, z: 40.781}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9137,7 +9207,7 @@ Transform:
   m_GameObject: {fileID: 1891736819}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 261.041, y: 68.42545, z: 45.831}
+  m_LocalPosition: {x: 254.64, y: 68.14, z: 45.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9157,7 +9227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 18
-  archiverLine: Seven days? I've woken up here before.
+  archiverLine: No medicine either? I'm in so much pain
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9565,7 +9635,7 @@ Transform:
   m_GameObject: {fileID: 1959566358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 270.118, y: 67.607, z: 46.776}
+  m_LocalPosition: {x: 270.118, y: 67.371, z: 46.778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9778,7 +9848,7 @@ Transform:
   m_GameObject: {fileID: 2018303624}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.859, y: 69.174, z: 56.739}
+  m_LocalPosition: {x: 258.539, y: 68.299, z: 56.589}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
