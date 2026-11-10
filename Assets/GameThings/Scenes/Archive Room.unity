@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 39510466}
   - component: {fileID: 39510465}
   m_Layer: 0
-  m_Name: PhotoSpot 3 (4)
+  m_Name: PhotoSpot 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,8 +372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 3
-  archiverLine: We are in space. beautiful
+  storyOrder: 7
+  archiverLine: Something was dragged out of here. Toward the front of the ship.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -383,21 +383,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1476869730}
-        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
-        m_MethodName: Unlock
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   replayOnCapturedWhenLoaded: 1
   debugLog: 1
 --- !u!4 &39510466
@@ -409,17 +399,163 @@ Transform:
   m_GameObject: {fileID: 39510464}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 265.46, y: 68.42545, z: 52.847}
+  m_LocalPosition: {x: 258.595, y: 67.046, z: 43.427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 298137999}
+  m_Father: {fileID: 1999084700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &67070667 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 311841332178447967, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
   m_PrefabInstance: {fileID: 1578557795}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &70807293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70807294}
+  - component: {fileID: 70807295}
+  m_Layer: 0
+  m_Name: PhotoSpot 24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &70807294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70807293}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 250.773, y: 68.657, z: 58.276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852290858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &70807295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70807293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 24
+  archiverLine: That's why the ships never stop. Nobody knows I'm here.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!1 &86685801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 86685805}
+  - component: {fileID: 86685804}
+  - component: {fileID: 86685803}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &86685803
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86685801}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4dbd91c8682198c459143332993ba1ed, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &86685804
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86685801}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &86685805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86685801}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0.7071068, z: -0.000000029802322, w: 0}
+  m_LocalPosition: {x: -0.094, y: -0.061927922, z: -0.04075956}
+  m_LocalScale: {x: -0.3685651, y: -0.41109645, z: -0.25922447}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1220377241}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &90112975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8594438517191827437, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
@@ -468,6 +604,132 @@ Transform:
   - {fileID: 365845119}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &144093304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 144093305}
+  - component: {fileID: 144093306}
+  m_Layer: 0
+  m_Name: PhotoSpot 14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &144093305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144093304}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 267.938, y: 68.62, z: 47.702}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 589714244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &144093306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144093304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 14
+  archiverLine: They must have been starving.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!1 &159658914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159658915}
+  - component: {fileID: 159658916}
+  m_Layer: 0
+  m_Name: PhotoSpot 13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159658915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159658914}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 267.17, y: 68.93, z: 42.534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 589714244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159658916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159658914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 13
+  archiverLine: They packed everything. They planned this
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1001 &202488765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,7 +805,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1476869731}
   m_SourcePrefab: {fileID: 100100000, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
 --- !u!1 &205307395
 GameObject:
@@ -783,7 +1048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.847
+      value: 12.53
       objectReference: {fileID: 0}
     - target: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
       propertyPath: m_LocalPosition.y
@@ -838,6 +1103,69 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 228936059}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &246559862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246559863}
+  - component: {fileID: 246559864}
+  m_Layer: 0
+  m_Name: PhotoSpot 11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &246559863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246559862}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 254.63, y: 68.78, z: 53.074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1239677058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &246559864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246559862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 11
+  archiverLine: Zero? That can't be right. Must be broken.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &266000182
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,13 +1315,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 913116272}
-  - {fileID: 791984238}
-  - {fileID: 1878438676}
-  - {fileID: 766976960}
-  - {fileID: 864894394}
-  - {fileID: 1466522925}
-  - {fileID: 39510466}
+  - {fileID: 925794099}
+  - {fileID: 1999084700}
+  - {fileID: 1239677058}
+  - {fileID: 589714244}
+  - {fileID: 1852290858}
+  - {fileID: 1596324390}
+  - {fileID: 1024903733}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &300235888
@@ -1373,7 +1701,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 473179349}
   m_SourcePrefab: {fileID: 100100000, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
 --- !u!4 &342243725 stripped
 Transform:
@@ -1385,12 +1716,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 331436911}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 473179348}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &345812464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6913582182513628784, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
+  m_PrefabInstance: {fileID: 4190230294629970902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &350652982 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7058414224320964643, guid: a72ffbd1a9dc3fe44b201ba8cd206d8b, type: 3}
@@ -1748,6 +2084,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 489049117}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &411369871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411369872}
+  - component: {fileID: 411369873}
+  m_Layer: 0
+  m_Name: PhotoSpot 27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411369872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411369871}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 270.331, y: 68.577, z: 55.421}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411369873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411369871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 27
+  archiverLine: They left it with me.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &425756853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,7 +2220,7 @@ Transform:
   m_GameObject: {fileID: 430486049}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 36.627, y: 0.01000002, z: 7.4300003}
+  m_LocalPosition: {x: 36.66, y: 0.01000002, z: 5.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1983,12 +2382,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &473179348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 331436911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &473179349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473179348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbc269f8be1c0e41a76fb2265cb4955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredMemories: []
+  memoriesRequired: 0
+  requiredSpots:
+  - {fileID: 159658916}
+  - {fileID: 144093306}
+  - {fileID: 1959566360}
+  - {fileID: 658618666}
+  - {fileID: 1868421595}
+  - {fileID: 1891736821}
+  onUnlock:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 342243726}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &485365043 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6028722778095525775, guid: 5489e92f34469804fb799719c076a319, type: 3}
   m_PrefabInstance: {fileID: 5197370877706124626}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1220377236}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -2013,7 +2453,7 @@ PrefabInstance:
     - target: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
       propertyPath: indicators.Array.data[0].renderer
       value: 
-      objectReference: {fileID: 1332111430}
+      objectReference: {fileID: 789712631}
     - target: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
       propertyPath: indicators.Array.data[1].materialIndex
       value: 0
@@ -2074,6 +2514,169 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1841164367}
   m_SourcePrefab: {fileID: 100100000, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+--- !u!1 &545040707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 545040708}
+  - component: {fileID: 545040709}
+  m_Layer: 0
+  m_Name: PhotoSpot 26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &545040708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545040707}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 267.006, y: 68.937, z: 57.001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &545040709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545040707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 26
+  archiverLine: So that's why we're stuck.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!1 &559751459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559751460}
+  - component: {fileID: 559751461}
+  m_Layer: 0
+  m_Name: PhotoSpot 19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559751460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559751459}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 259.62, y: 67.636, z: 60.487}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852290858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &559751461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559751459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 19
+  archiverLine: ...
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!1 &589714243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589714244}
+  m_Layer: 0
+  m_Name: storage->RestArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &589714244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589714243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 159658915}
+  - {fileID: 144093305}
+  - {fileID: 1959566359}
+  - {fileID: 658618665}
+  - {fileID: 1868421594}
+  - {fileID: 1891736820}
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589980994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,19 +2743,7 @@ MonoBehaviour:
   photosNeeded: 3
   onReached:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8009524401978307154}
-        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
-        m_MethodName: Unlock
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &589980998
 Transform:
   m_ObjectHideFlags: 0
@@ -2469,6 +3060,132 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &637734689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637734690}
+  - component: {fileID: 637734691}
+  m_Layer: 0
+  m_Name: PhotoSpot 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &637734690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637734689}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.913, y: 68.42545, z: 51.459}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1239677058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &637734691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637734689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 10
+  archiverLine: Somebody used this a lot.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!1 &658618664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 658618665}
+  - component: {fileID: 658618666}
+  m_Layer: 0
+  m_Name: PhotoSpot 16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &658618665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658618664}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.615, y: 68.42545, z: 49.606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 589714244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658618666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658618664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 16
+  archiverLine: Someone's been diving every week. Who?
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1001 &673617707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2576,6 +3293,11 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -6874535482846886179, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
   m_PrefabInstance: {fileID: 1578557795}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &745112486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 202488765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &750051961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,6 +3392,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &756182780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4789206562167619692, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
+  m_PrefabInstance: {fileID: 4190230294629970902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &766976959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,7 +3408,7 @@ GameObject:
   - component: {fileID: 766976960}
   - component: {fileID: 766976961}
   m_Layer: 0
-  m_Name: PhotoSpot 3 (1)
+  m_Name: PhotoSpot 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2696,11 +3423,11 @@ Transform:
   m_GameObject: {fileID: 766976959}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 256.526, y: 68.42545, z: 53.079}
+  m_LocalPosition: {x: 260.59, y: 68.411, z: 53.079}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 298137999}
+  m_Father: {fileID: 1999084700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &766976961
 MonoBehaviour:
@@ -2715,8 +3442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 3
-  archiverLine: We are in space. beautiful
+  storyOrder: 4
+  archiverLine: 8 People lived here. Where are they?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -2726,23 +3453,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 342243726}
-        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
-        m_MethodName: Unlock
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   replayOnCapturedWhenLoaded: 1
   debugLog: 1
+--- !u!23 &789712631 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6608655540306953186, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+  m_PrefabInstance: {fileID: 1578557795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &791984236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,7 +3476,7 @@ GameObject:
   - component: {fileID: 791984238}
   - component: {fileID: 791984237}
   m_Layer: 0
-  m_Name: PhotoSpot 2
+  m_Name: PhotoSpot 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2773,8 +3495,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: Memories
-  storyOrder: 2
-  archiverLine: The memories we play, lost in time
+  storyOrder: 3
+  archiverLine: That would explain a lot. Last activation seven days ago? Did I wake
+    up before?
   maxDistance: 5.03
   minDistance: 0.3
   screenMargin: 0.15
@@ -2784,6 +3507,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
@@ -2798,11 +3523,11 @@ Transform:
   m_GameObject: {fileID: 791984236}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 228.88329, y: 68.42545, z: 45.847942}
+  m_LocalPosition: {x: 261.606, y: 68.42545, z: 46.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 298137999}
+  m_Father: {fileID: 925794099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &794843435 stripped
 GameObject:
@@ -2997,6 +3722,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &835700566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835700567}
+  - component: {fileID: 835700568}
+  m_Layer: 0
+  m_Name: PhotoSpot 22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &835700567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835700566}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 267.018, y: 67.072, z: 44.434}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852290858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &835700568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835700566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 22
+  archiverLine: They packed one for me. Then they left it.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!4 &842748032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
@@ -3007,7 +3795,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 1827725287}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 963077233}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
@@ -3128,6 +3916,74 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!1 &854130933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 8009524401978307152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &857360157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857360158}
+  - component: {fileID: 857360159}
+  m_Layer: 0
+  m_Name: PhotoSpot 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &857360158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857360157}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 260.077, y: 67.896, z: 41.639}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 925794099}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &857360159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857360157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 12
+  archiverLine: These tools are for the head.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &864894393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,7 +3995,7 @@ GameObject:
   - component: {fileID: 864894394}
   - component: {fileID: 864894395}
   m_Layer: 0
-  m_Name: PhotoSpot 3 (2)
+  m_Name: PhotoSpot 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3154,11 +4010,11 @@ Transform:
   m_GameObject: {fileID: 864894393}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 256.5, y: 68.42545, z: 48.526}
+  m_LocalPosition: {x: 268.9, y: 69.169, z: 53.064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 298137999}
+  m_Father: {fileID: 1999084700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &864894395
 MonoBehaviour:
@@ -3173,8 +4029,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 3
-  archiverLine: We are in space. beautiful
+  storyOrder: 5
+  archiverLine: Automated. So nobody's flying this thing.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3184,6 +4040,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
@@ -3475,7 +4333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: Console
   storyOrder: 1
-  archiverLine: The Archiver. A fancy memory playing console.
+  archiverLine: I woke up in here, every part of me aches.
   maxDistance: 5.51
   minDistance: 0.3
   screenMargin: 0.15
@@ -3485,6 +4343,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
@@ -3499,12 +4359,111 @@ Transform:
   m_GameObject: {fileID: 913116270}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 225.30228, y: 68.52945, z: 50.521942}
+  m_LocalPosition: {x: 260.878, y: 68.52945, z: 45.113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 925794099}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &925794098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 925794099}
+  m_Layer: 0
+  m_Name: Medbay->Hallway
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &925794099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925794098}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 913116272}
+  - {fileID: 1878438676}
+  - {fileID: 791984238}
+  - {fileID: 857360158}
+  - {fileID: 1944540579}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &925822185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 925822186}
+  - component: {fileID: 925822187}
+  m_Layer: 0
+  m_Name: PhotoSpot 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &925822186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925822185}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 228.88329, y: 68.42545, z: 45.847942}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1239677058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925822187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925822185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: Memories
+  storyOrder: 9
+  archiverLine: All of these are places. Real ones
+  maxDistance: 5.03
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &927358416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,14 +4592,54 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1926660259}
   - {fileID: 405520476}
-  - {fileID: 1702773688}
+  - {fileID: 1926660259}
   - {fileID: 842748032}
+  - {fileID: 1702773688}
   - {fileID: 1476869729}
   - {fileID: 342243725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &963077233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 1827725287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &963077234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963077233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbc269f8be1c0e41a76fb2265cb4955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredMemories: []
+  memoriesRequired: 0
+  requiredSpots:
+  - {fileID: 1450010560}
+  - {fileID: 925822187}
+  - {fileID: 637734691}
+  - {fileID: 246559864}
+  - {fileID: 857360159}
+  onUnlock:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 842748033}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &964845435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3878,7 +4877,7 @@ Transform:
   m_GameObject: {fileID: 1000529097}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 27.001999, y: 0.01000002, z: -6.75}
+  m_LocalPosition: {x: 28.1, y: -0.201, z: -6.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4149,6 +5148,132 @@ Transform:
   - {fileID: 331385714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!1 &1024903732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1024903733}
+  - component: {fileID: 1024903734}
+  m_Layer: 0
+  m_Name: PhotoSpot 34
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1024903733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024903732}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 282.511, y: 67.991, z: 51.021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1024903734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024903732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 34
+  archiverLine: That is my name. Is this me?
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!1 &1061427450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061427451}
+  - component: {fileID: 1061427452}
+  m_Layer: 0
+  m_Name: PhotoSpot 20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061427451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061427450}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 262.143, y: 69.013, z: 59.384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852290858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061427452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061427450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 20
+  archiverLine: I was one of them.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1091428230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,6 +5414,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1095498120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1095498121}
+  - component: {fileID: 1095498122}
+  m_Layer: 0
+  m_Name: PhotoSpot 23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1095498121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095498120}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.569, y: 69.285, z: 49.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852290858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1095498122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095498120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 23
+  archiverLine: Neural stability? Whose?
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1135856416
 GameObject:
   m_ObjectHideFlags: 0
@@ -4404,6 +5592,69 @@ Transform:
   - {fileID: 1490581115}
   m_Father: {fileID: 143580934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1146895742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146895743}
+  - component: {fileID: 1146895744}
+  m_Layer: 0
+  m_Name: PhotoSpot 30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146895743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146895742}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 270.654, y: 67.566, z: 46.764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146895744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146895742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 30
+  archiverLine: They didn't leave me with nothing.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1151382047
 GameObject:
   m_ObjectHideFlags: 0
@@ -4665,6 +5916,90 @@ MonoBehaviour:
   completeMarker: {fileID: 0}
   glowRenderer: {fileID: 0}
   completeGlowBoost: 2
+--- !u!1 &1220377236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7723907371345656152, guid: 5489e92f34469804fb799719c076a319, type: 3}
+  m_PrefabInstance: {fileID: 5197370877706124626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1220377241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 419080548460935884, guid: 5489e92f34469804fb799719c076a319, type: 3}
+  m_PrefabInstance: {fileID: 5197370877706124626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1220377242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220377236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbd532cb49e44a4db0745ed3f1cf0d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photoCamera: {fileID: 0}
+  holster: {fileID: 345812464}
+  holsteredDistance: 0.25
+  leftController: {fileID: 756182780}
+  rightController: {fileID: 1468412503}
+  holdRange: 0.35
+  warmExtra: 4
+  exitBuffer: 0.5
+  checkInterval: 0.25
+  fastCheckInterval: 0.1
+  warmInterval: 1.4
+  hotIntervalFar: 0.7
+  hotIntervalNear: 0.25
+  ledRenderer: {fileID: 1418362222}
+  ledColor: {r: 0, g: 0.9, b: 1, a: 1}
+  idleBrightness: 0.05
+  pulseBrightness: 2
+  framedBrightness: 1.4
+  pulseFade: 0.2
+  framedGlow: {fileID: 86685801}
+  tickSound: {fileID: 8300000, guid: 32361fa0c4efed64d9905eece9855dde, type: 3}
+  tickVolume: 0.25
+  framedSound: {fileID: 8300000, guid: 7631783c4314adb48819d9bd58833b0b, type: 3}
+  warmHaptic: 0.08
+  hotHaptic: 0.25
+  hapticDuration: 0.05
+  debugLog: 0
+--- !u!1 &1239677057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1239677058}
+  m_Layer: 0
+  m_Name: Archive->Storage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1239677058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239677057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1450010559}
+  - {fileID: 925822186}
+  - {fileID: 637734690}
+  - {fileID: 246559863}
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281358624
 GameObject:
   m_ObjectHideFlags: 0
@@ -4966,11 +6301,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!23 &1332111430 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3534982671241132620, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
-  m_PrefabInstance: {fileID: 1578557795}
+--- !u!1 &1334843858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1334843859}
+  - component: {fileID: 1334843860}
+  m_Layer: 0
+  m_Name: PhotoSpot 31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1334843859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334843858}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 229.24, y: 70.21, z: 55.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1334843860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334843858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 31
+  archiverLine: Every cable runs the same way. Toward the cockpit.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1349231134
 GameObject:
   m_ObjectHideFlags: 0
@@ -5086,6 +6479,74 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!1 &1403978005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403978006}
+  - component: {fileID: 1403978007}
+  m_Layer: 0
+  m_Name: PhotoSpot 32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403978006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403978005}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 276.91, y: 68.833, z: 52.856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1403978007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403978005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 32
+  archiverLine: I can fly this
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!23 &1418362222 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 454775743690840055, guid: 5489e92f34469804fb799719c076a319, type: 3}
+  m_PrefabInstance: {fileID: 5197370877706124626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1424571190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5210,7 +6671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enforceOrder: 1
-  requiredCount: 7
+  requiredCount: 34
   onProgress:
     m_PersistentCalls:
       m_Calls: []
@@ -5233,6 +6694,132 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1450010558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450010559}
+  - component: {fileID: 1450010560}
+  m_Layer: 0
+  m_Name: PhotoSpot 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450010559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450010558}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 225.30228, y: 68.52945, z: 50.391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1239677058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1450010560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450010558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: Console
+  storyOrder: 8
+  archiverLine: So this is what the cubes are for.
+  maxDistance: 5.51
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!1 &1460980790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460980791}
+  - component: {fileID: 1460980792}
+  m_Layer: 0
+  m_Name: PhotoSpot 28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460980791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460980790}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 264.824, y: 68.252, z: 57.363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1460980792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460980790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 28
+  archiverLine: It goes here.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1466522924
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,7 +6831,7 @@ GameObject:
   - component: {fileID: 1466522925}
   - component: {fileID: 1466522926}
   m_Layer: 0
-  m_Name: PhotoSpot 3 (3)
+  m_Name: PhotoSpot 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5259,11 +6846,11 @@ Transform:
   m_GameObject: {fileID: 1466522924}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 265.28, y: 68.42545, z: 48.75}
+  m_LocalPosition: {x: 274.44, y: 68.484, z: 48.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 298137999}
+  m_Father: {fileID: 1999084700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1466522926
 MonoBehaviour:
@@ -5278,8 +6865,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 3
-  archiverLine: We are in space. beautiful
+  storyOrder: 6
+  archiverLine: There was an escape pod here. It looks like they left. Why am I still
+    here then?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -5289,10 +6877,60 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
+--- !u!4 &1468412503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2595931347009162478, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
+  m_PrefabInstance: {fileID: 4190230294629970902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1476869729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 202488765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1476869730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+  m_PrefabInstance: {fileID: 202488765}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745112486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1476869731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745112486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbc269f8be1c0e41a76fb2265cb4955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredMemories: []
+  memoriesRequired: 0
+  requiredSpots:
+  - {fileID: 559751461}
+  - {fileID: 1061427452}
+  - {fileID: 2018303626}
+  - {fileID: 835700568}
+  - {fileID: 1095498122}
+  - {fileID: 70807295}
+  - {fileID: 1944540580}
+  onUnlock:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 842748033}
+      - m_Target: {fileID: 1476869730}
         m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
         m_MethodName: Unlock
         m_Mode: 1
@@ -5304,24 +6942,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
---- !u!4 &1476869729 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
-  m_PrefabInstance: {fileID: 202488765}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1476869730 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
-  m_PrefabInstance: {fileID: 202488765}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1481349862 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6361968886011487649, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
@@ -5376,15 +6996,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3213956706505552648, guid: 46f202432722ff942b217754f3ac4d8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.7
+      value: -35.989
       objectReference: {fileID: 0}
     - target: {fileID: 3213956706505552648, guid: 46f202432722ff942b217754f3ac4d8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.96
+      value: -1.228
       objectReference: {fileID: 0}
     - target: {fileID: 3213956706505552648, guid: 46f202432722ff942b217754f3ac4d8c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.59
+      value: 5.554
       objectReference: {fileID: 0}
     - target: {fileID: 3213956706505552648, guid: 46f202432722ff942b217754f3ac4d8c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5427,17 +7047,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3213956706505552648, guid: 46f202432722ff942b217754f3ac4d8c, type: 3}
   m_PrefabInstance: {fileID: 1501112666}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1501112668 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1540712844339459218, guid: 46f202432722ff942b217754f3ac4d8c, type: 3}
-  m_PrefabInstance: {fileID: 1501112666}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266900997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7d2525fc8ba3184abbb4713b7cc47de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1501112669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6071,6 +7680,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9b531b8d7726127488d0ba2f4e0c9665, type: 2}
+    - target: {fileID: 6918000421265322446, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5316007
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918000421265322446, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.531601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918000421265322446, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4662622
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918000421265322446, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4662625
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918000421265322446, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918000421265322446, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -82.507
+      objectReference: {fileID: 0}
     - target: {fileID: 7071182760956848314, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6124,6 +7757,8 @@ PrefabInstance:
     - {fileID: 1061393958699210643, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     - {fileID: 7579984104740295993, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     - {fileID: 6320301419972642092, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+    - {fileID: -284640640695791788, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+    - {fileID: 7234890677712916648, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
@@ -6241,6 +7876,45 @@ Transform:
   m_Children:
   - {fileID: 1912636283}
   m_Father: {fileID: 143580934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1596324389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596324390}
+  m_Layer: 0
+  m_Name: EngineRoom->CockPit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1596324390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596324389}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 545040708}
+  - {fileID: 411369872}
+  - {fileID: 1460980791}
+  - {fileID: 2082000138}
+  - {fileID: 1146895743}
+  - {fileID: 1334843859}
+  - {fileID: 1403978006}
+  - {fileID: 1650152681}
+  m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1604551782
 GameObject:
@@ -6367,6 +8041,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1201834995}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1650152680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650152681}
+  - component: {fileID: 1650152682}
+  m_Layer: 0
+  m_Name: PhotoSpot 33
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650152681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650152680}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 256.232, y: 69.064, z: 40.782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650152682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650152680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 33
+  archiverLine: Still no idea who I am..
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1671817862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3813310982254948452, guid: e6dcb709b6cff5b46886ecefd60dc8ad, type: 3}
@@ -6498,13 +8235,14 @@ MonoBehaviour:
   requiredMemories: []
   memoriesRequired: 1
   requiredSpots:
-  - {fileID: 913116271}
-  - {fileID: 791984237}
-  - {fileID: 1878438675}
-  - {fileID: 766976961}
-  - {fileID: 864894395}
-  - {fileID: 1466522926}
-  - {fileID: 39510465}
+  - {fileID: 545040709}
+  - {fileID: 411369873}
+  - {fileID: 1460980792}
+  - {fileID: 2082000139}
+  - {fileID: 1146895744}
+  - {fileID: 1334843860}
+  - {fileID: 1403978007}
+  - {fileID: 1650152682}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -7085,7 +8823,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 963077234}
   m_SourcePrefab: {fileID: 100100000, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
 --- !u!114 &1841164366 stripped
 MonoBehaviour:
@@ -7110,10 +8851,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cbc269f8be1c0e41a76fb2265cb4955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredMemories:
-  - {fileID: 1501112668}
+  requiredMemories: []
   memoriesRequired: 0
-  requiredSpots: []
+  requiredSpots:
+  - {fileID: 913116271}
+  - {fileID: 791984237}
+  - {fileID: 1878438675}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -7160,6 +8903,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 23230771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1852290857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1852290858}
+  m_Layer: 0
+  m_Name: RestArea->EngineRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1852290858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852290857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 559751460}
+  - {fileID: 1061427451}
+  - {fileID: 2018303625}
+  - {fileID: 835700567}
+  - {fileID: 1095498121}
+  - {fileID: 70807294}
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1865425764
 GameObject:
   m_ObjectHideFlags: 0
@@ -7191,6 +8971,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 981058342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1868421593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1868421594}
+  - component: {fileID: 1868421595}
+  m_Layer: 0
+  m_Name: PhotoSpot 17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1868421594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868421593}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 272.521, y: 68.72, z: 48.459}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 589714244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1868421595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868421593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 17
+  archiverLine: Five years. And seven of them, not eight THEY LEFT ME
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1001 &1870157641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7287,7 +9130,7 @@ GameObject:
   - component: {fileID: 1878438676}
   - component: {fileID: 1878438675}
   m_Layer: 0
-  m_Name: PhotoSpot 3
+  m_Name: PhotoSpot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7306,8 +9149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 3
-  archiverLine: We are in space. beautiful
+  storyOrder: 2
+  archiverLine: Who am I?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -7317,6 +9160,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
@@ -7331,12 +9176,75 @@ Transform:
   m_GameObject: {fileID: 1878438674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 253.39027, y: 68.42545, z: 50.81894}
+  m_LocalPosition: {x: 256.233, y: 68.352, z: 40.781}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 298137999}
+  m_Father: {fileID: 925794099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1891736819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891736820}
+  - component: {fileID: 1891736821}
+  m_Layer: 0
+  m_Name: PhotoSpot 18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1891736820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891736819}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 254.64, y: 68.14, z: 45.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 589714244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891736821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891736819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 18
+  archiverLine: No medicine either? I'm in so much pain
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1895662608
 GameObject:
   m_ObjectHideFlags: 0
@@ -7556,6 +9464,69 @@ MonoBehaviour:
   completeMarker: {fileID: 0}
   glowRenderer: {fileID: 0}
   completeGlowBoost: 2
+--- !u!1 &1944540578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944540579}
+  - component: {fileID: 1944540580}
+  m_Layer: 0
+  m_Name: PhotoSpot 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944540579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944540578}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 254.124, y: 70.189, z: 45.831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 925794099}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944540580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944540578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 25
+  archiverLine: That alarm wasn't broken. It was warning me.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1946781131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8013841094864485257, guid: 52eeeee011dd2b74fb793e3520b43135, type: 3}
@@ -7639,6 +9610,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363730896}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1959566358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959566359}
+  - component: {fileID: 1959566360}
+  m_Layer: 0
+  m_Name: PhotoSpot 15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1959566359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959566358}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 270.118, y: 67.371, z: 46.778}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 589714244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1959566360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959566358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 15
+  archiverLine: That's my name. I think.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1975196958
 GameObject:
   m_ObjectHideFlags: 0
@@ -7754,6 +9788,104 @@ Transform:
   - {fileID: 2035684997}
   m_Father: {fileID: 143580934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1999084699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1999084700}
+  m_Layer: 0
+  m_Name: Hallway->Archive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1999084700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999084699}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 766976960}
+  - {fileID: 864894394}
+  - {fileID: 1466522925}
+  - {fileID: 39510466}
+  m_Father: {fileID: 298137999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2018303624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018303625}
+  - component: {fileID: 2018303626}
+  m_Layer: 0
+  m_Name: PhotoSpot 21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2018303625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018303624}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 258.539, y: 68.299, z: 56.589}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1852290858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2018303626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018303624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 21
+  archiverLine: We're drifting into a star.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &2027133476
 GameObject:
   m_ObjectHideFlags: 0
@@ -8017,6 +10149,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1510010451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082000137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082000138}
+  - component: {fileID: 2082000139}
+  m_Layer: 0
+  m_Name: PhotoSpot 29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082000138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082000137}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 259.37, y: 68.252, z: 57.099}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082000139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082000137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 29
+  archiverLine: It's closer than before.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &2096750246
 GameObject:
   m_ObjectHideFlags: 0
@@ -8105,7 +10300,7 @@ Transform:
   m_GameObject: {fileID: 2096750246}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 45.92, y: 0.01000002, z: 0}
+  m_LocalPosition: {x: 53.11, y: 0.01000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8227,7 +10422,7 @@ PrefabInstance:
       objectReference: {fileID: 1094137051}
     - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.438
+      value: 17.555
       objectReference: {fileID: 0}
     - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8235,7 +10430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.014
+      value: -2.717
       objectReference: {fileID: 0}
     - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8268,6 +10463,10 @@ PrefabInstance:
     - target: {fileID: 2743110301554288287, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130612779988252225, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.597
       objectReference: {fileID: 0}
     - target: {fileID: 6458226856376071177, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
       propertyPath: m_StartingSelectedInteractable
@@ -8326,6 +10525,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 454775743690840055, guid: 5489e92f34469804fb799719c076a319, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3142d3595572876448cfddce5192afe2, type: 2}
     - target: {fileID: 2448141340207085308, guid: 5489e92f34469804fb799719c076a319, type: 3}
       propertyPath: homeSocket
       value: 
@@ -8336,8 +10539,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 419080548460935884, guid: 5489e92f34469804fb799719c076a319, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 86685805}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7723907371345656152, guid: 5489e92f34469804fb799719c076a319, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1220377242}
   m_SourcePrefab: {fileID: 100100000, guid: 5489e92f34469804fb799719c076a319, type: 3}
 --- !u!1001 &8009524401978307152
 PrefabInstance:
@@ -8409,24 +10618,61 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
       propertyPath: m_Name
-      value: HallwayDoor
+      value: ArchiveDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6963359015241373302, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8009524401978307155}
   m_SourcePrefab: {fileID: 100100000, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
 --- !u!114 &8009524401978307154 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1419539291250690320, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 8009524401978307152}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 854130933}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8009524401978307155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854130933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbc269f8be1c0e41a76fb2265cb4955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredMemories: []
+  memoriesRequired: 0
+  requiredSpots:
+  - {fileID: 766976961}
+  - {fileID: 864894395}
+  - {fileID: 1466522926}
+  - {fileID: 39510465}
+  onUnlock:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8009524401978307154}
+        m_TargetAssemblyTypeName: SlidingDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
