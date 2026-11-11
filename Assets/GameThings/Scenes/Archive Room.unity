@@ -342,69 +342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &39510464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 39510466}
-  - component: {fileID: 39510465}
-  m_Layer: 0
-  m_Name: PhotoSpot 9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &39510465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39510464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 7
-  archiverLine: Something was dragged out of here. Toward the front of the ship.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
---- !u!4 &39510466
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39510464}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.595, y: 67.046, z: 49.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1999084700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &67070667 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 311841332178447967, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
@@ -498,6 +435,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8594438517191827437, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
   m_PrefabInstance: {fileID: 673617707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &140817468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140817469}
+  - component: {fileID: 140817470}
+  m_Layer: 0
+  m_Name: PhotoSpot 33 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &140817469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140817468}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 270.29, y: 68.58, z: 55.444}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140817470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140817468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 26
+  archiverLine: It can't be fixed. They tried everything
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &143580933
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 14
+  storyOrder: 18
   archiverLine: No water. No food. They must have been starving.
   maxDistance: 3.95
   minDistance: 0.3
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 13
+  storyOrder: 17
   archiverLine: Stripped bare. They took everything.
   maxDistance: 3.95
   minDistance: 0.3
@@ -1085,8 +1085,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 11
-  archiverLine: Zero? That can't be right. Must be broken.
+  storyOrder: 9
+  archiverLine: Zero? That can't be right, I am breathing right now. Must be broken.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -1688,7 +1688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 16
+  storyOrder: 15
   archiverLine: A ship. It's not slowing down. Can't they see me?
   maxDistance: 3.95
   minDistance: 0.3
@@ -2342,9 +2342,8 @@ MonoBehaviour:
   - {fileID: 159658916}
   - {fileID: 144093306}
   - {fileID: 1959566360}
-  - {fileID: 658618666}
-  - {fileID: 1868421595}
   - {fileID: 1891736821}
+  - {fileID: 1299411015}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -2496,8 +2495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 26
-  archiverLine: So that's why we're stuck.
+  storyOrder: 25
+  archiverLine: Dead. That's why we're drifting.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -2559,7 +2558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 19
+  storyOrder: 22
   archiverLine: Bring me back from what?
   maxDistance: 3.95
   minDistance: 0.3
@@ -2947,8 +2946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 16
-  archiverLine: So the memories help a mind hold together.
+  storyOrder: 14
+  archiverLine: So the memories help hold a mind together.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3104,7 +3103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 10
+  storyOrder: 12
   archiverLine: Over four thousand dives. Whoever used this practically lived in
     it.
   maxDistance: 3.95
@@ -3168,7 +3167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 16
+  storyOrder: 13
   archiverLine: Someone worked here. Every day, by the looks of it.
   maxDistance: 3.95
   minDistance: 0.3
@@ -3442,7 +3441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 4
+  storyOrder: 5
   archiverLine: Eight names. Is one of them mine?
   maxDistance: 3.95
   minDistance: 0.3
@@ -3903,7 +3902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 12
+  storyOrder: 4
   archiverLine: Someone had surgery here. Was it me?
   maxDistance: 3.95
   minDistance: 0.3
@@ -3966,7 +3965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 5
+  storyOrder: 6
   archiverLine: Automated. So nobody's flying this ship?
   maxDistance: 3.95
   minDistance: 0.3
@@ -4335,7 +4334,6 @@ Transform:
   - {fileID: 1878438676}
   - {fileID: 791984238}
   - {fileID: 857360158}
-  - {fileID: 1944540579}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925822185
@@ -4383,7 +4381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: Memories
-  storyOrder: 9
+  storyOrder: 11
   archiverLine: Hundreds of slots. Every cube is a memory.
   maxDistance: 5.03
   minDistance: 0.3
@@ -4500,6 +4498,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
   m_PrefabInstance: {fileID: 673617707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935919636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935919637}
+  - component: {fileID: 935919638}
+  m_Layer: 0
+  m_Name: PhotoSpot 33 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935919637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935919636}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 276.818, y: 68.816, z: 52.737}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &935919638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935919636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 27
+  archiverLine: 'Flight access: Rowan Hale. Maybe the cockpit can still get us moving.'
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &947754442
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,8 +4621,10 @@ MonoBehaviour:
   - {fileID: 1450010560}
   - {fileID: 925822187}
   - {fileID: 637734691}
-  - {fileID: 246559864}
-  - {fileID: 857360159}
+  - {fileID: 658618666}
+  - {fileID: 611663277}
+  - {fileID: 335908882}
+  - {fileID: 1872674281}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -5130,7 +5193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 34
+  storyOrder: 29
   archiverLine: That is my name. Is this me?
   maxDistance: 3.95
   minDistance: 0.3
@@ -5174,7 +5237,7 @@ Transform:
   m_GameObject: {fileID: 1061427450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 262.143, y: 69.013, z: 59.384}
+  m_LocalPosition: {x: 261.833, y: 68.593, z: 56.844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5193,8 +5256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 20
-  archiverLine: That's me. I was one of them.
+  storyOrder: 23
+  archiverLine: They left me like nothing, why on earth?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -5810,7 +5873,6 @@ Transform:
   - {fileID: 637734690}
   - {fileID: 658618665}
   - {fileID: 611663276}
-  - {fileID: 1918016253}
   - {fileID: 335908881}
   - {fileID: 1872674280}
   m_Father: {fileID: 298137999}
@@ -6161,7 +6223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 18
+  storyOrder: 21
   archiverLine: No medicine either? I'm in so much pain
   maxDistance: 3.95
   minDistance: 0.3
@@ -6423,7 +6485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enforceOrder: 1
-  requiredCount: 34
+  requiredCount: 29
   onProgress:
     m_PersistentCalls:
       m_Calls: []
@@ -6491,7 +6553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: Console
-  storyOrder: 8
+  storyOrder: 10
   archiverLine: This machine reads the cubes. I don't know how I know that.
   maxDistance: 5.51
   minDistance: 0.3
@@ -6554,7 +6616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 6
+  storyOrder: 7
   archiverLine: There was an escape pod here. It looks like they left. Why am I still
     here then?
   maxDistance: 3.95
@@ -6612,10 +6674,6 @@ MonoBehaviour:
   - {fileID: 559751461}
   - {fileID: 1061427452}
   - {fileID: 2018303626}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1944540580}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -7113,6 +7171,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1562567918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562567919}
+  - component: {fileID: 1562567920}
+  m_Layer: 0
+  m_Name: PhotoSpot 33 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562567919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562567918}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 255.89, y: 68.816, z: 40.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562567920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562567918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 28
+  archiverLine: Still just stars. I know my name now. I still don't know what I am.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1001 &1578557795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7596,6 +7717,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 545040708}
+  - {fileID: 140817469}
+  - {fileID: 935919637}
+  - {fileID: 1562567919}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1604551782
@@ -7855,13 +7979,9 @@ MonoBehaviour:
   memoriesRequired: 1
   requiredSpots:
   - {fileID: 545040709}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 140817470}
+  - {fileID: 935919638}
+  - {fileID: 1562567920}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -8474,8 +8594,9 @@ MonoBehaviour:
   memoriesRequired: 0
   requiredSpots:
   - {fileID: 913116271}
-  - {fileID: 791984237}
   - {fileID: 1878438675}
+  - {fileID: 791984237}
+  - {fileID: 857360159}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -8632,9 +8753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 17
-  archiverLine: Five years ago.. Seven left. The board says eight. Someone stayed
-    behind.
+  storyOrder: 8
+  archiverLine: Five years.. no one has come for me in that long?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -8907,7 +9027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 18
+  storyOrder: 20
   archiverLine: Rowan Hale. Me. I was part of this crew.
   maxDistance: 3.95
   minDistance: 0.3
@@ -9118,69 +9238,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1590422472}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1918016252
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1918016253}
-  - component: {fileID: 1918016254}
-  m_Layer: 0
-  m_Name: PhotoSpot 17
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1918016253
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918016252}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 221.615, y: 68.42545, z: 49.606}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1239677058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1918016254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918016252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 16
-  archiverLine: Someone's been diving every week. Who?
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!4 &1926660259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
@@ -9207,69 +9264,6 @@ MonoBehaviour:
   completeMarker: {fileID: 0}
   glowRenderer: {fileID: 0}
   completeGlowBoost: 2
---- !u!1 &1944540578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1944540579}
-  - component: {fileID: 1944540580}
-  m_Layer: 0
-  m_Name: PhotoSpot 5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1944540579
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944540578}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 254.124, y: 70.189, z: 45.831}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 925794099}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1944540580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944540578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 25
-  archiverLine: Some kind of warning. I don't know what it means.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &1946781131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8013841094864485257, guid: 52eeeee011dd2b74fb793e3520b43135, type: 3}
@@ -9398,7 +9392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 15
+  storyOrder: 19
   archiverLine: Rowan Hale. That name was on the board. I think it's mine."
   maxDistance: 3.95
   minDistance: 0.3
@@ -9563,7 +9557,6 @@ Transform:
   - {fileID: 766976960}
   - {fileID: 864894394}
   - {fileID: 1466522925}
-  - {fileID: 39510466}
   - {fileID: 1868421594}
   - {fileID: 246559863}
   m_Father: {fileID: 298137999}
@@ -9613,8 +9606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 21
-  archiverLine: We're drifting into a star.
+  storyOrder: 24
+  archiverLine: Is this where they went?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -10339,7 +10332,8 @@ MonoBehaviour:
   - {fileID: 766976961}
   - {fileID: 864894395}
   - {fileID: 1466522926}
-  - {fileID: 39510465}
+  - {fileID: 1868421595}
+  - {fileID: 246559864}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
