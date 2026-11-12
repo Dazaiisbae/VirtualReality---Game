@@ -7976,7 +7976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredMemories: []
-  memoriesRequired: 1
+  memoriesRequired: 0
   requiredSpots:
   - {fileID: 545040709}
   - {fileID: 140817470}
