@@ -1173,6 +1173,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0441589
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5032959
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7207642
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49944088
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5005403
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5000545
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.49996385
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.916
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90.06
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
       propertyPath: m_Name
       value: Title Screen1
@@ -1180,6 +1216,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -3798597711559607027, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+    - {fileID: 5124044694847289502, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
+    - {fileID: -3625374727238472569, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -208595431880416365, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
