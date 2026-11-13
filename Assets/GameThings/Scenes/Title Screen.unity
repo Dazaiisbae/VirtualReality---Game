@@ -1178,7 +1178,8 @@ PrefabInstance:
       value: Title Screen1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -3798597711559607027, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -208595431880416365, guid: df02049632fa20b46b7e70a3feb3e991, type: 3}

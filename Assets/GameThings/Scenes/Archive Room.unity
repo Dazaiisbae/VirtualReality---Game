@@ -3279,6 +3279,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: The Archiver and TV
       objectReference: {fileID: 0}
+    - target: {fileID: 2508838339402827008, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4dbd91c8682198c459143332993ba1ed, type: 2}
+    - target: {fileID: 6170364737530096044, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4dbd91c8682198c459143332993ba1ed, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8485173162082002552, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
