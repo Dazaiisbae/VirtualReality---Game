@@ -481,7 +481,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 26
-  archiverLine: It can't be fixed. They tried everything
+  archiverLine: It can't be fixed. They tried everything. If anything still works,
+    it's in the cockpit.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -587,7 +588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 18
-  archiverLine: No water. No food. They must have been starving.
+  archiverLine: No water. No food. They must have been starving. So they took everything
+    and left. Except that one crate.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -650,7 +652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 17
-  archiverLine: Stripped bare. They took everything.
+  archiverLine: Stripped bare. Someone took everything. That screen on the wall might
+    say what happened.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -1086,7 +1089,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 9
-  archiverLine: Zero? That can't be right, I am breathing right now. Must be broken.
+  archiverLine: Zero? I'm breathing fine. It must be broken. Maybe the next room
+    has answers.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -1689,7 +1693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 15
-  archiverLine: A ship. It's not slowing down. Can't they see me?
+  archiverLine: A ship. It's not slowing down. Can't they see me? Those cables in
+    the hallway. Where do they go?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -2496,7 +2501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 25
-  archiverLine: Dead. That's why we're drifting.
+  archiverLine: Dead. That's why we're drifting. There has to be a repair log somewhere.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -2559,7 +2564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 22
-  archiverLine: Bring me back from what?
+  archiverLine: Bring me back from what? Their things must still be here somewhere.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -2947,7 +2952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 14
-  archiverLine: So the memories help hold a mind together.
+  archiverLine: So the memories help hold a mind together. Something's moving outside
+    the window.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3105,7 +3111,7 @@ MonoBehaviour:
   spotId: ship_door
   storyOrder: 12
   archiverLine: Over four thousand dives. Whoever used this practically lived in
-    it.
+    it. They must have worked nearby.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3168,7 +3174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 13
-  archiverLine: Someone worked here. Every day, by the looks of it.
+  archiverLine: Someone worked here. Every day, by the looks of it. Their screen's
+    still on.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3442,7 +3449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 5
-  archiverLine: Eight names. Is one of them mine?
+  archiverLine: Eight names. Is one of them mine? Who's flying this ship?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3496,7 +3503,7 @@ MonoBehaviour:
   spotId: Memories
   storyOrder: 3
   archiverLine: Unresponsive. Was I in a coma? That would explain why I can't remember
-    anything.
+    anything. Who was treating me?
   maxDistance: 5.03
   minDistance: 0.3
   screenMargin: 0.15
@@ -3903,7 +3910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 4
-  archiverLine: Someone had surgery here. Was it me?
+  archiverLine: Someone had surgery here. Was it me? I need to find someone. Anyone
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3966,7 +3973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 6
-  archiverLine: Automated. So nobody's flying this ship?
+  archiverLine: Automated. So nobody's flying this ship. Then how did everyone get
+    off?"
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -4269,7 +4277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: Console
   storyOrder: 1
-  archiverLine: I woke up in here, every part of me aches.
+  archiverLine: I woke up in here. Everything aches. Is there a window? I need to
+    know where I am.
   maxDistance: 5.51
   minDistance: 0.3
   screenMargin: 0.15
@@ -4382,7 +4391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: Memories
   storyOrder: 11
-  archiverLine: Hundreds of slots. Every cube is a memory.
+  archiverLine: Hundreds of slots. Every cube is a place. How does someone go inside
+    one?
   maxDistance: 5.03
   minDistance: 0.3
   screenMargin: 0.15
@@ -4544,7 +4554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 27
-  archiverLine: 'Flight access: Rowan Hale. Maybe the cockpit can still get us moving.'
+  archiverLine: 'Flight access: Rowan Hale. Maybe the cockpit can still get us moving.
+    One more look at where I woke up first.'
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -5257,7 +5268,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 23
-  archiverLine: They left me like nothing, why on earth?
+  archiverLine: Empty. They took everything that mattered to them. What's that light
+    over the table?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -6224,7 +6236,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 21
-  archiverLine: No medicine either? I'm in so much pain
+  archiverLine: No medicine either? I'm in so much pain. Maybe the crew's quarters
+    will tell me more.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -6554,7 +6567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: Console
   storyOrder: 10
-  archiverLine: This machine reads the cubes. I don't know how I know that.
+  archiverLine: This machine reads the cubes. I don't know how I know that. Where
+    are the cubes kept?
   maxDistance: 5.51
   minDistance: 0.3
   screenMargin: 0.15
@@ -6617,8 +6631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 7
-  archiverLine: There was an escape pod here. It looks like they left. Why am I still
-    here then?
+  archiverLine: Something was docked here. It's gone. There should be a log of when
+    it left.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -7218,6 +7232,7 @@ MonoBehaviour:
   spotId: ship_door
   storyOrder: 28
   archiverLine: Still just stars. I know my name now. I still don't know what I am.
+    It's time to open the cockpit.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -8754,7 +8769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 8
-  archiverLine: Five years.. no one has come for me in that long?
+  archiverLine: Five years.. no one has come for me in that long? Is life support
+    even working?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -8902,7 +8918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 16
-  archiverLine: These cables run along every wall. They all head the same way.
+  archiverLine: These cables run along every wall. They all head toward the cockpit.
+    Maybe one of those cubes will help me remember
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -8950,7 +8967,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 2
-  archiverLine: Just stars. I don't know where I am. Or who I am.
+  archiverLine: Just stars. I don't know where I am. Or who I am. There has to be
+    a chart on me somewhere.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9028,7 +9046,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 20
-  archiverLine: Rowan Hale. Me. I was part of this crew.
+  archiverLine: Rowan Hale. Me. I was part of this crew. And I still hurt everywhere.
+    There has to be medicine in the medbay.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9393,7 +9412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 19
-  archiverLine: Rowan Hale. That name was on the board. I think it's mine."
+  archiverLine: Rowan Hale. That name was on the board. I think it's mine. I need
+    to look at that board again.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9607,7 +9627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 24
-  archiverLine: Is this where they went?
+  archiverLine: That's where they went. If I can get the ship moving, I can follow
+    them. I need to get to the engine room.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
