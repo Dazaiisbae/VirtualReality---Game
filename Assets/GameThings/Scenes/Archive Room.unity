@@ -331,148 +331,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &33765977 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6458226856376071177, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-  m_PrefabInstance: {fileID: 4190230294629970902}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &39510464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 39510466}
-  - component: {fileID: 39510465}
-  m_Layer: 0
-  m_Name: PhotoSpot 7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &39510465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39510464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 7
-  archiverLine: Something was dragged out of here. Toward the front of the ship.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
---- !u!4 &39510466
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39510464}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.595, y: 67.046, z: 43.427}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1999084700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &67070667 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 311841332178447967, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
   m_PrefabInstance: {fileID: 1578557795}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &70807293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 70807294}
-  - component: {fileID: 70807295}
-  m_Layer: 0
-  m_Name: PhotoSpot 24
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &70807294
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70807293}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250.773, y: 68.657, z: 58.276}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1852290858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &70807295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70807293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 24
-  archiverLine: That's why the ships never stop. Nobody knows I'm here.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &86685801
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,6 +424,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8594438517191827437, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
   m_PrefabInstance: {fileID: 673617707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &140817468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140817469}
+  - component: {fileID: 140817470}
+  m_Layer: 0
+  m_Name: PhotoSpot 33 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &140817469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140817468}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 270.29, y: 68.58, z: 55.444}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140817470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140817468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 26
+  archiverLine: It can't be fixed. They tried everything. If anything still works,
+    it's in the cockpit.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &143580933
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +542,7 @@ GameObject:
   - component: {fileID: 144093305}
   - component: {fileID: 144093306}
   m_Layer: 0
-  m_Name: PhotoSpot 14
+  m_Name: PhotoSpot 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,8 +576,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 14
-  archiverLine: They must have been starving.
+  storyOrder: 18
+  archiverLine: No water. No food. They must have been starving. So they took everything
+    and left. Except that one crate.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -678,7 +606,7 @@ GameObject:
   - component: {fileID: 159658915}
   - component: {fileID: 159658916}
   m_Layer: 0
-  m_Name: PhotoSpot 13
+  m_Name: PhotoSpot 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,8 +640,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 13
-  archiverLine: They packed everything. They planned this
+  storyOrder: 17
+  archiverLine: Stripped bare. Someone took everything. That screen on the wall might
+    say what happened.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -984,6 +913,8 @@ Transform:
   - {fileID: 430486050}
   - {fileID: 612247884}
   - {fileID: 1561430573}
+  - {fileID: 1785338051}
+  - {fileID: 1181496088}
   - {fileID: 2096750248}
   - {fileID: 1005309684}
   - {fileID: 1291064100}
@@ -1133,7 +1064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1239677058}
+  m_Father: {fileID: 1999084700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &246559864
 MonoBehaviour:
@@ -1148,8 +1079,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 11
-  archiverLine: Zero? That can't be right. Must be broken.
+  storyOrder: 9
+  archiverLine: Zero? I'm breathing fine. It must be broken. Maybe the next room
+    has answers.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -1166,6 +1098,55 @@ MonoBehaviour:
       m_Calls: []
   replayOnCapturedWhenLoaded: 1
   debugLog: 1
+--- !u!1 &246714424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246714426}
+  - component: {fileID: 246714425}
+  m_Layer: 0
+  m_Name: sceneloader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &246714425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246714424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463154e003d9532438457115988a2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Title Screen
+  delayBeforeFade: 2
+  fadeDuration: 1.5
+  fadeGroup: {fileID: 0}
+  shipAnimator: {fileID: 0}
+--- !u!4 &246714426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246714424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 310.98523, y: 800.31354, z: -843.92535}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &266000182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1687,70 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 473179349}
   m_SourcePrefab: {fileID: 100100000, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
+--- !u!1 &335908880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 335908881}
+  - component: {fileID: 335908882}
+  m_Layer: 0
+  m_Name: PhotoSpot 18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &335908881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335908880}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 250.847, y: 68.653, z: 58.008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1239677058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335908882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335908880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 15
+  archiverLine: A ship. It's not slowing down. Can't they see me? Those cables in
+    the hallway. Where do they go?
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!4 &342243725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
@@ -1722,11 +1767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42484dbae3ac3b34e8a32b680e006721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &345812464 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6913582182513628784, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-  m_PrefabInstance: {fileID: 4190230294629970902}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &350652982 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7058414224320964643, guid: a72ffbd1a9dc3fe44b201ba8cd206d8b, type: 3}
@@ -2084,69 +2124,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
   m_PrefabInstance: {fileID: 489049117}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &411369871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 411369872}
-  - component: {fileID: 411369873}
-  m_Layer: 0
-  m_Name: PhotoSpot 27
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &411369872
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411369871}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 270.331, y: 68.577, z: 55.421}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596324390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &411369873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411369871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 27
-  archiverLine: They left it with me.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &425756853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,9 +2382,8 @@ MonoBehaviour:
   - {fileID: 159658916}
   - {fileID: 144093306}
   - {fileID: 1959566360}
-  - {fileID: 658618666}
-  - {fileID: 1868421595}
   - {fileID: 1891736821}
+  - {fileID: 1299411015}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -2525,7 +2501,7 @@ GameObject:
   - component: {fileID: 545040708}
   - component: {fileID: 545040709}
   m_Layer: 0
-  m_Name: PhotoSpot 26
+  m_Name: PhotoSpot 33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2559,8 +2535,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 26
-  archiverLine: So that's why we're stuck.
+  storyOrder: 25
+  archiverLine: Dead. That's why we're drifting. There has to be a repair log somewhere.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -2588,7 +2564,7 @@ GameObject:
   - component: {fileID: 559751460}
   - component: {fileID: 559751461}
   m_Layer: 0
-  m_Name: PhotoSpot 19
+  m_Name: PhotoSpot 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2622,8 +2598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 19
-  archiverLine: ...
+  storyOrder: 22
+  archiverLine: Bring me back from what? Their things must still be here somewhere.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -2672,9 +2648,8 @@ Transform:
   - {fileID: 159658915}
   - {fileID: 144093305}
   - {fileID: 1959566359}
-  - {fileID: 658618665}
-  - {fileID: 1868421594}
   - {fileID: 1891736820}
+  - {fileID: 1299411014}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589980994
@@ -2966,6 +2941,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 266000185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &611663275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 611663276}
+  - component: {fileID: 611663277}
+  m_Layer: 0
+  m_Name: PhotoSpot 16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &611663276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611663275}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.615, y: 68.42545, z: 49.606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1239677058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &611663277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611663275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 14
+  archiverLine: So the memories help hold a mind together. Something's moving outside
+    the window.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &612247883
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,7 +3110,7 @@ GameObject:
   - component: {fileID: 637734690}
   - component: {fileID: 637734691}
   m_Layer: 0
-  m_Name: PhotoSpot 10
+  m_Name: PhotoSpot 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3105,8 +3144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 10
-  archiverLine: Somebody used this a lot.
+  storyOrder: 12
+  archiverLine: Over four thousand dives. Whoever used this practically lived in
+    it. They must have worked nearby.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3134,7 +3174,7 @@ GameObject:
   - component: {fileID: 658618665}
   - component: {fileID: 658618666}
   m_Layer: 0
-  m_Name: PhotoSpot 16
+  m_Name: PhotoSpot 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3149,11 +3189,11 @@ Transform:
   m_GameObject: {fileID: 658618664}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 221.615, y: 68.42545, z: 49.606}
+  m_LocalPosition: {x: 249.715, y: 67.96, z: 46.898}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 589714244}
+  m_Father: {fileID: 1239677058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &658618666
 MonoBehaviour:
@@ -3168,8 +3208,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 16
-  archiverLine: Someone's been diving every week. Who?
+  storyOrder: 13
+  archiverLine: Someone worked here. Every day, by the looks of it. Their screen's
+    still on.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3238,6 +3279,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: The Archiver and TV
       objectReference: {fileID: 0}
+    - target: {fileID: 2508838339402827008, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4dbd91c8682198c459143332993ba1ed, type: 2}
+    - target: {fileID: 6170364737530096044, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4dbd91c8682198c459143332993ba1ed, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8485173162082002552, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
@@ -3392,11 +3441,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!4 &756182780 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4789206562167619692, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-  m_PrefabInstance: {fileID: 4190230294629970902}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &766976959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,7 +3452,7 @@ GameObject:
   - component: {fileID: 766976960}
   - component: {fileID: 766976961}
   m_Layer: 0
-  m_Name: PhotoSpot 4
+  m_Name: PhotoSpot 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3442,8 +3486,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 4
-  archiverLine: 8 People lived here. Where are they?
+  storyOrder: 5
+  archiverLine: Eight names. Is one of them mine? Who's flying this ship?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3496,8 +3540,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: Memories
   storyOrder: 3
-  archiverLine: That would explain a lot. Last activation seven days ago? Did I wake
-    up before?
+  archiverLine: Unresponsive. Was I in a coma? That would explain why I can't remember
+    anything. Who was treating me?
   maxDistance: 5.03
   minDistance: 0.3
   screenMargin: 0.15
@@ -3722,69 +3766,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &835700566
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 835700567}
-  - component: {fileID: 835700568}
-  m_Layer: 0
-  m_Name: PhotoSpot 22
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &835700567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835700566}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 267.018, y: 67.072, z: 44.434}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1852290858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &835700568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835700566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 22
-  archiverLine: They packed one for me. Then they left it.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!4 &842748032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
@@ -3966,8 +3947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 12
-  archiverLine: These tools are for the head.
+  storyOrder: 4
+  archiverLine: Someone had surgery here. Was it me? I need to find someone. Anyone
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -3995,7 +3976,7 @@ GameObject:
   - component: {fileID: 864894394}
   - component: {fileID: 864894395}
   m_Layer: 0
-  m_Name: PhotoSpot 5
+  m_Name: PhotoSpot 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4029,8 +4010,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 5
-  archiverLine: Automated. So nobody's flying this thing.
+  storyOrder: 6
+  archiverLine: Automated. So nobody's flying this ship. Then how did everyone get
+    off?"
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -4333,7 +4315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: Console
   storyOrder: 1
-  archiverLine: I woke up in here, every part of me aches.
+  archiverLine: I woke up in here. Everything aches. Is there a window? I need to
+    know where I am.
   maxDistance: 5.51
   minDistance: 0.3
   screenMargin: 0.15
@@ -4398,7 +4381,6 @@ Transform:
   - {fileID: 1878438676}
   - {fileID: 791984238}
   - {fileID: 857360158}
-  - {fileID: 1944540579}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925822185
@@ -4412,7 +4394,7 @@ GameObject:
   - component: {fileID: 925822186}
   - component: {fileID: 925822187}
   m_Layer: 0
-  m_Name: PhotoSpot 9
+  m_Name: PhotoSpot 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4446,8 +4428,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: Memories
-  storyOrder: 9
-  archiverLine: All of these are places. Real ones
+  storyOrder: 11
+  archiverLine: Hundreds of slots. Every cube is a place. How does someone go inside
+    one?
   maxDistance: 5.03
   minDistance: 0.3
   screenMargin: 0.15
@@ -4563,6 +4546,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d44bacd79a5371d47ac7e267b1214b8d, type: 3}
   m_PrefabInstance: {fileID: 673617707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935919636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935919637}
+  - component: {fileID: 935919638}
+  m_Layer: 0
+  m_Name: PhotoSpot 33 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935919637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935919636}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 276.818, y: 68.816, z: 52.737}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &935919638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935919636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 27
+  archiverLine: 'Flight access: Rowan Hale. Maybe the cockpit can still get us moving.
+    One more look at where I woke up first.'
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &947754442
 GameObject:
   m_ObjectHideFlags: 0
@@ -4623,8 +4670,10 @@ MonoBehaviour:
   - {fileID: 1450010560}
   - {fileID: 925822187}
   - {fileID: 637734691}
-  - {fileID: 246559864}
-  - {fileID: 857360159}
+  - {fileID: 658618666}
+  - {fileID: 611663277}
+  - {fileID: 335908882}
+  - {fileID: 1872674281}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -5159,7 +5208,7 @@ GameObject:
   - component: {fileID: 1024903733}
   - component: {fileID: 1024903734}
   m_Layer: 0
-  m_Name: PhotoSpot 34
+  m_Name: PhotoSpot 42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5193,7 +5242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 34
+  storyOrder: 29
   archiverLine: That is my name. Is this me?
   maxDistance: 3.95
   minDistance: 0.3
@@ -5208,9 +5257,115 @@ MonoBehaviour:
   hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 246714425}
+        m_TargetAssemblyTypeName: TitleStartSequence, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   replayOnCapturedWhenLoaded: 1
   debugLog: 1
+--- !u!1 &1034829092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034829094}
+  - component: {fileID: 1034829093}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1034829093
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034829092}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.79
+  m_Range: 32.16
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1034829094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034829092}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -8.54, y: 7.61, z: 58.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1061427450
 GameObject:
   m_ObjectHideFlags: 0
@@ -5222,7 +5377,7 @@ GameObject:
   - component: {fileID: 1061427451}
   - component: {fileID: 1061427452}
   m_Layer: 0
-  m_Name: PhotoSpot 20
+  m_Name: PhotoSpot 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5237,7 +5392,7 @@ Transform:
   m_GameObject: {fileID: 1061427450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 262.143, y: 69.013, z: 59.384}
+  m_LocalPosition: {x: 261.833, y: 68.593, z: 56.844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5256,8 +5411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 20
-  archiverLine: I was one of them.
+  storyOrder: 23
+  archiverLine: Empty. They took everything that mattered to them. What's that light
+    over the table?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -5414,69 +5570,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1095498120
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1095498121}
-  - component: {fileID: 1095498122}
-  m_Layer: 0
-  m_Name: PhotoSpot 23
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1095498121
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095498120}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 221.569, y: 69.285, z: 49.61}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1852290858}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1095498122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095498120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 23
-  archiverLine: Neural stability? Whose?
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &1135856416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5592,69 +5685,6 @@ Transform:
   - {fileID: 1490581115}
   m_Father: {fileID: 143580934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1146895742
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1146895743}
-  - component: {fileID: 1146895744}
-  m_Layer: 0
-  m_Name: PhotoSpot 30
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1146895743
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146895742}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 270.654, y: 67.566, z: 46.764}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596324390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1146895744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146895742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 30
-  archiverLine: They didn't leave me with nothing.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &1151382047
 GameObject:
   m_ObjectHideFlags: 0
@@ -5749,6 +5779,100 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1181496087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1181496088}
+  - component: {fileID: 1181496089}
+  m_Layer: 0
+  m_Name: Area Light (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1181496088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181496087}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 43.51, y: 0.01000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 221142992}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &1181496089
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181496087}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 30
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1192992121
 GameObject:
   m_ObjectHideFlags: 0
@@ -5939,10 +6063,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   photoCamera: {fileID: 0}
-  holster: {fileID: 345812464}
+  holster: {fileID: 7338415606444467622}
   holsteredDistance: 0.25
-  leftController: {fileID: 756182780}
-  rightController: {fileID: 1468412503}
+  leftController: {fileID: 8669461988789154746}
+  rightController: {fileID: 2170780714175807288}
   holdRange: 0.35
   warmExtra: 4
   exitBuffer: 0.5
@@ -5997,7 +6121,10 @@ Transform:
   - {fileID: 1450010559}
   - {fileID: 925822186}
   - {fileID: 637734690}
-  - {fileID: 246559863}
+  - {fileID: 658618665}
+  - {fileID: 611663276}
+  - {fileID: 335908881}
+  - {fileID: 1872674280}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281358624
@@ -6301,7 +6428,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1334843858
+--- !u!1 &1299411013
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6309,45 +6436,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1334843859}
-  - component: {fileID: 1334843860}
+  - component: {fileID: 1299411014}
+  - component: {fileID: 1299411015}
   m_Layer: 0
-  m_Name: PhotoSpot 31
+  m_Name: PhotoSpot 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1334843859
+--- !u!4 &1299411014
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334843858}
+  m_GameObject: {fileID: 1299411013}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 229.24, y: 70.21, z: 55.46}
+  m_LocalPosition: {x: 254.64, y: 68.14, z: 45.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1596324390}
+  m_Father: {fileID: 589714244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1334843860
+--- !u!114 &1299411015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334843858}
+  m_GameObject: {fileID: 1299411013}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 31
-  archiverLine: Every cable runs the same way. Toward the cockpit.
+  storyOrder: 21
+  archiverLine: No medicine either? I'm in so much pain. Maybe the crew's quarters
+    will tell me more.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -6479,69 +6607,6 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
---- !u!1 &1403978005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1403978006}
-  - component: {fileID: 1403978007}
-  m_Layer: 0
-  m_Name: PhotoSpot 32
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1403978006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403978005}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 276.91, y: 68.833, z: 52.856}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596324390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1403978007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403978005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 32
-  archiverLine: I can fly this
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!23 &1418362222 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 454775743690840055, guid: 5489e92f34469804fb799719c076a319, type: 3}
@@ -6671,7 +6736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enforceOrder: 1
-  requiredCount: 34
+  requiredCount: 29
   onProgress:
     m_PersistentCalls:
       m_Calls: []
@@ -6705,7 +6770,7 @@ GameObject:
   - component: {fileID: 1450010559}
   - component: {fileID: 1450010560}
   m_Layer: 0
-  m_Name: PhotoSpot 8
+  m_Name: PhotoSpot 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6739,72 +6804,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: Console
-  storyOrder: 8
-  archiverLine: So this is what the cubes are for.
+  storyOrder: 10
+  archiverLine: This machine reads the cubes. I don't know how I know that. Where
+    are the cubes kept?
   maxDistance: 5.51
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
---- !u!1 &1460980790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1460980791}
-  - component: {fileID: 1460980792}
-  m_Layer: 0
-  m_Name: PhotoSpot 28
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1460980791
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460980790}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 264.824, y: 68.252, z: 57.363}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596324390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1460980792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460980790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 28
-  archiverLine: It goes here.
-  maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
   maxViewAngle: 180
@@ -6831,7 +6834,7 @@ GameObject:
   - component: {fileID: 1466522925}
   - component: {fileID: 1466522926}
   m_Layer: 0
-  m_Name: PhotoSpot 6
+  m_Name: PhotoSpot 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6865,9 +6868,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 6
-  archiverLine: There was an escape pod here. It looks like they left. Why am I still
-    here then?
+  storyOrder: 7
+  archiverLine: Something was docked here. It's gone. There should be a log of when
+    it left.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -6884,11 +6887,6 @@ MonoBehaviour:
       m_Calls: []
   replayOnCapturedWhenLoaded: 1
   debugLog: 1
---- !u!4 &1468412503 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2595931347009162478, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-  m_PrefabInstance: {fileID: 4190230294629970902}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1476869729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5903380926703256115, guid: 5aea1719612fa3a42a69f0e0ea5a8e65, type: 3}
@@ -6923,10 +6921,6 @@ MonoBehaviour:
   - {fileID: 559751461}
   - {fileID: 1061427452}
   - {fileID: 2018303626}
-  - {fileID: 835700568}
-  - {fileID: 1095498122}
-  - {fileID: 70807295}
-  - {fileID: 1944540580}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -7424,6 +7418,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1562567918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562567919}
+  - component: {fileID: 1562567920}
+  m_Layer: 0
+  m_Name: PhotoSpot 33 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562567919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562567918}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 255.89, y: 68.816, z: 40.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1596324390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562567920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562567918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 28
+  archiverLine: Still just stars. I know my name now. I still don't know what I am.
+    It's time to open the cockpit.
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1001 &1578557795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7760,8 +7818,174 @@ PrefabInstance:
     - {fileID: -284640640695791788, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     - {fileID: 7234890677712916648, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3266618362427837072, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578557798}
+    - targetCorrespondingSourceObject: {fileID: 3266618362427837072, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578557797}
+    - targetCorrespondingSourceObject: {fileID: 3266618362427837072, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578557799}
   m_SourcePrefab: {fileID: 100100000, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+--- !u!1 &1578557796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3266618362427837072, guid: 9705aa1e877d07c498b4aef0f5e97cb9, type: 3}
+  m_PrefabInstance: {fileID: 1578557795}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1578557797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578557796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463154e003d9532438457115988a2f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Title Screen
+  delayBeforeFade: 0
+  fadeDuration: 1.5
+  fadeGroup: {fileID: 0}
+  shipAnimator: {fileID: 0}
+--- !u!65 &1578557798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578557796}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.019999998, y: 0.019999998, z: 0.019999998}
+  m_Center: {x: 0, y: -0.000000029802322, z: 0}
+--- !u!114 &1578557799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578557796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1578557797}
+        m_TargetAssemblyTypeName: TitleStartSequence, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1590422469
 GameObject:
   m_ObjectHideFlags: 0
@@ -7907,13 +8131,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 545040708}
-  - {fileID: 411369872}
-  - {fileID: 1460980791}
-  - {fileID: 2082000138}
-  - {fileID: 1146895743}
-  - {fileID: 1334843859}
-  - {fileID: 1403978006}
-  - {fileID: 1650152681}
+  - {fileID: 140817469}
+  - {fileID: 935919637}
+  - {fileID: 1562567919}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1604551782
@@ -8041,69 +8261,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1201834995}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1650152680
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1650152681}
-  - component: {fileID: 1650152682}
-  m_Layer: 0
-  m_Name: PhotoSpot 33
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1650152681
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650152680}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 256.232, y: 69.064, z: 40.782}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596324390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1650152682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650152680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 33
-  archiverLine: Still no idea who I am..
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &1671817862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3813310982254948452, guid: e6dcb709b6cff5b46886ecefd60dc8ad, type: 3}
@@ -8233,16 +8390,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredMemories: []
-  memoriesRequired: 1
+  memoriesRequired: 0
   requiredSpots:
   - {fileID: 545040709}
-  - {fileID: 411369873}
-  - {fileID: 1460980792}
-  - {fileID: 2082000139}
-  - {fileID: 1146895744}
-  - {fileID: 1334843860}
-  - {fileID: 1403978007}
-  - {fileID: 1650152682}
+  - {fileID: 140817470}
+  - {fileID: 935919638}
+  - {fileID: 1562567920}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -8548,6 +8701,100 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221142992}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1785338050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785338051}
+  - component: {fileID: 1785338052}
+  m_Layer: 0
+  m_Name: Area Light (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1785338051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785338050}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 48.714, y: 0.01000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 221142992}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &1785338052
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785338050}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 30
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1788541487
 GameObject:
   m_ObjectHideFlags: 0
@@ -8855,8 +9102,9 @@ MonoBehaviour:
   memoriesRequired: 0
   requiredSpots:
   - {fileID: 913116271}
-  - {fileID: 791984237}
   - {fileID: 1878438675}
+  - {fileID: 791984237}
+  - {fileID: 857360159}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -8935,9 +9183,6 @@ Transform:
   - {fileID: 559751460}
   - {fileID: 1061427451}
   - {fileID: 2018303625}
-  - {fileID: 835700567}
-  - {fileID: 1095498121}
-  - {fileID: 70807294}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1865425764
@@ -8982,7 +9227,7 @@ GameObject:
   - component: {fileID: 1868421594}
   - component: {fileID: 1868421595}
   m_Layer: 0
-  m_Name: PhotoSpot 17
+  m_Name: PhotoSpot 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9001,7 +9246,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 589714244}
+  m_Father: {fileID: 1999084700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1868421595
 MonoBehaviour:
@@ -9016,8 +9261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 17
-  archiverLine: Five years. And seven of them, not eight THEY LEFT ME
+  storyOrder: 8
+  archiverLine: Five years.. no one has come for me in that long? Is life support
+    even working?
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9119,6 +9365,70 @@ MonoBehaviour:
   completeMarker: {fileID: 0}
   glowRenderer: {fileID: 0}
   completeGlowBoost: 2
+--- !u!1 &1872674279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1872674280}
+  - component: {fileID: 1872674281}
+  m_Layer: 0
+  m_Name: PhotoSpot 19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1872674280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872674279}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 275.557, y: 69.987, z: 49.174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1239677058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1872674281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872674279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotId: ship_door
+  storyOrder: 16
+  archiverLine: These cables run along every wall. They all head toward the cockpit.
+    Maybe one of those cubes will help me remember
+  maxDistance: 3.95
+  minDistance: 0.3
+  screenMargin: 0.15
+  maxViewAngle: 180
+  requireLineOfSight: 1
+  occlusionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
+  onCaptured:
+    m_PersistentCalls:
+      m_Calls: []
+  replayOnCapturedWhenLoaded: 1
+  debugLog: 1
 --- !u!1 &1878438674
 GameObject:
   m_ObjectHideFlags: 0
@@ -9150,7 +9460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotId: ship_door
   storyOrder: 2
-  archiverLine: Who am I?
+  archiverLine: Just stars. I don't know where I am. Or who I am. There has to be
+    a chart on me somewhere.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9176,7 +9487,7 @@ Transform:
   m_GameObject: {fileID: 1878438674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 256.233, y: 68.352, z: 40.781}
+  m_LocalPosition: {x: 256.233, y: 68.502, z: 40.781}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9193,7 +9504,7 @@ GameObject:
   - component: {fileID: 1891736820}
   - component: {fileID: 1891736821}
   m_Layer: 0
-  m_Name: PhotoSpot 18
+  m_Name: PhotoSpot 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9208,7 +9519,7 @@ Transform:
   m_GameObject: {fileID: 1891736819}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 254.64, y: 68.14, z: 45.35}
+  m_LocalPosition: {x: 261.654, y: 68.271, z: 53.152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9227,8 +9538,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 18
-  archiverLine: No medicine either? I'm in so much pain
+  storyOrder: 20
+  archiverLine: Rowan Hale. Me. I was part of this crew. And I still hurt everywhere.
+    There has to be medicine in the medbay.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9464,69 +9776,6 @@ MonoBehaviour:
   completeMarker: {fileID: 0}
   glowRenderer: {fileID: 0}
   completeGlowBoost: 2
---- !u!1 &1944540578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1944540579}
-  - component: {fileID: 1944540580}
-  m_Layer: 0
-  m_Name: PhotoSpot 5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1944540579
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944540578}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 254.124, y: 70.189, z: 45.831}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 925794099}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1944540580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944540578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 25
-  archiverLine: That alarm wasn't broken. It was warning me.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &1946781131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8013841094864485257, guid: 52eeeee011dd2b74fb793e3520b43135, type: 3}
@@ -9621,7 +9870,7 @@ GameObject:
   - component: {fileID: 1959566359}
   - component: {fileID: 1959566360}
   m_Layer: 0
-  m_Name: PhotoSpot 15
+  m_Name: PhotoSpot 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9636,7 +9885,7 @@ Transform:
   m_GameObject: {fileID: 1959566358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 270.118, y: 67.371, z: 46.778}
+  m_LocalPosition: {x: 270.118, y: 67.371, z: 46.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9655,8 +9904,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 15
-  archiverLine: That's my name. I think.
+  storyOrder: 19
+  archiverLine: Rowan Hale. That name was on the board. I think it's mine. I need
+    to look at that board again.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9820,7 +10070,8 @@ Transform:
   - {fileID: 766976960}
   - {fileID: 864894394}
   - {fileID: 1466522925}
-  - {fileID: 39510466}
+  - {fileID: 1868421594}
+  - {fileID: 246559863}
   m_Father: {fileID: 298137999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018303624
@@ -9834,7 +10085,7 @@ GameObject:
   - component: {fileID: 2018303625}
   - component: {fileID: 2018303626}
   m_Layer: 0
-  m_Name: PhotoSpot 21
+  m_Name: PhotoSpot 28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9868,8 +10119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotId: ship_door
-  storyOrder: 21
-  archiverLine: We're drifting into a star.
+  storyOrder: 24
+  archiverLine: That's where they went. If I can get the ship moving, I can follow
+    them. I need to get to the engine room.
   maxDistance: 3.95
   minDistance: 0.3
   screenMargin: 0.15
@@ -9947,7 +10199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 759a67e6216190241a4a8a45d3354883, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 46.5
+      value: 76.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 759a67e6216190241a4a8a45d3354883, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10048,7 +10300,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a5ae6bee609578444844e13dcbf9bb8b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7022d3bf3077f044d8364aa92d4ecbdf, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -10059,7 +10311,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 2.52
-  MaxDistance: 8.6
+  MaxDistance: 12.92
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -10094,7 +10346,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10109,7 +10361,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.16833332
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10124,7 +10376,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10149,69 +10401,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1510010451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2082000137
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2082000138}
-  - component: {fileID: 2082000139}
-  m_Layer: 0
-  m_Name: PhotoSpot 29
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2082000138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082000137}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 259.37, y: 68.252, z: 57.099}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1596324390}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2082000139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082000137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7658805a3e8986f419bf6c956b82a04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotId: ship_door
-  storyOrder: 29
-  archiverLine: It's closer than before.
-  maxDistance: 3.95
-  minDistance: 0.3
-  screenMargin: 0.15
-  maxViewAngle: 180
-  requireLineOfSight: 1
-  occlusionMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  extraFramePoints: []
-  showHint: 1
-  hintArea: {fileID: 0}
-  onCaptured:
-    m_PersistentCalls:
-      m_Calls: []
-  replayOnCapturedWhenLoaded: 1
-  debugLog: 1
 --- !u!1 &2096750246
 GameObject:
   m_ObjectHideFlags: 0
@@ -10300,7 +10489,7 @@ Transform:
   m_GameObject: {fileID: 2096750246}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 53.11, y: 0.01000002, z: 0}
+  m_LocalPosition: {x: 54.919, y: 0.01000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10408,75 +10597,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &4190230294629970902
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1093736794037920184, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1094137051}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.555
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.927
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.717
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184641952853790991, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2743110301554288287, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130612779988252225, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.597
-      objectReference: {fileID: 0}
-    - target: {fileID: 6458226856376071177, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
-      propertyPath: m_StartingSelectedInteractable
-      value: 
-      objectReference: {fileID: 485365043}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f0f37c48f9052f64e92a34e915bdc35e, type: 3}
+--- !u!4 &2170780714175807288 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6745285613098813552, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+  m_PrefabInstance: {fileID: 8366498875614978554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5197370877706124626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10532,7 +10657,7 @@ PrefabInstance:
     - target: {fileID: 2448141340207085308, guid: 5489e92f34469804fb799719c076a319, type: 3}
       propertyPath: homeSocket
       value: 
-      objectReference: {fileID: 33765977}
+      objectReference: {fileID: 7171572681124415455}
     - target: {fileID: 7723907371345656152, guid: 5489e92f34469804fb799719c076a319, type: 3}
       propertyPath: m_Name
       value: InGameCamera_Root
@@ -10548,6 +10673,22 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1220377242}
   m_SourcePrefab: {fileID: 100100000, guid: 5489e92f34469804fb799719c076a319, type: 3}
+--- !u!114 &7171572681124415455 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7275950453061394485, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+  m_PrefabInstance: {fileID: 8366498875614978554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &7338415606444467622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8580394073677236361, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+  m_PrefabInstance: {fileID: 8366498875614978554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8009524401978307152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10657,7 +10798,8 @@ MonoBehaviour:
   - {fileID: 766976961}
   - {fileID: 864894395}
   - {fileID: 1466522926}
-  - {fileID: 39510465}
+  - {fileID: 1868421595}
+  - {fileID: 246559864}
   onUnlock:
     m_PersistentCalls:
       m_Calls:
@@ -10673,11 +10815,81 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &8366498875614978554
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1742441629828174324, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1094137051}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.693
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.927
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783027548192380760, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275950453061394485, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_StartingSelectedInteractable
+      value: 
+      objectReference: {fileID: 485365043}
+    - target: {fileID: 8327947164470922947, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+--- !u!4 &8669461988789154746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3483838555099236591, guid: 23ac317eaa5346146bb3e3418dd1972a, type: 3}
+  m_PrefabInstance: {fileID: 8366498875614978554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 4190230294629970902}
+  - {fileID: 8366498875614978554}
   - {fileID: 673617707}
   - {fileID: 143580934}
   - {fileID: 2029336745}
@@ -10697,3 +10909,5 @@ SceneRoots:
   - {fileID: 589980998}
   - {fileID: 2027133477}
   - {fileID: 425756855}
+  - {fileID: 246714426}
+  - {fileID: 1034829094}
