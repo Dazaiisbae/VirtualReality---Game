@@ -8,7 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 // Socket Interactor Events (DYNAMIC section of the dropdown):
 //   Select Entered -> ConsoleMemoryLoader.OnCubeInserted
 //   Select Exited  -> ConsoleMemoryLoader.OnCubeRemoved
-// Green button's XR Simple Interactable -> Select Entered:
+// Platform (MemoryPlatform) -> On Activated:
 //   ConsoleMemoryLoader.OnButtonPressed
 public class ConsoleMemoryLoader : MonoBehaviour
 {
@@ -20,9 +20,16 @@ public class ConsoleMemoryLoader : MonoBehaviour
     [Header("Screen")]
     public Renderer screenRenderer;
     public float screenGlowIntensity = 3f;
-    [Tooltip("Optional TextMeshPro text on the screen.")]
+    [Tooltip("Desk panel text: shows the cube's status.")]
     public TMP_Text screenText;
     public string idleText = "INSERT MEMORY";
+
+    // NEW: second screen on the platform
+    [Header("Platform Screen")]
+    [Tooltip("Platform screen text: shows where you're going, the hold progress, and loading.")]
+    public TMP_Text platformText;
+    public string platformIdleText = "NO MEMORY LOADED";
+    public int linkBarLength = 5;
 
     [Header("Error Feedback")]
     public Color errorColor = Color.red;
@@ -34,7 +41,7 @@ public class ConsoleMemoryLoader : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip startupSound;
     public AudioClip errorSound;
-    [Tooltip("Optional click when the button is pressed.")]
+    [Tooltip("Optional click when the platform activates.")]
     public AudioClip buttonSound;
 
     [Header("Button (optional)")]
@@ -75,6 +82,7 @@ public class ConsoleMemoryLoader : MonoBehaviour
         }
         if (buttonVisual != null) buttonRestPos = buttonVisual.localPosition;
         SetText(idleText);
+        SetPlatformText(platformIdleText); // NEW
     }
 
     // ---------- Socket ----------
@@ -96,6 +104,7 @@ public class ConsoleMemoryLoader : MonoBehaviour
         StopError();
         SetScreenGlow(cube.memoryColor * screenGlowIntensity);
         SetText($"{cube.memoryName}\nREADY");
+        SetPlatformText($"{cube.memoryName}\nSTAND TO ENTER"); // NEW
     }
 
     public void OnCubeRemoved(SelectExitEventArgs args)
@@ -107,6 +116,8 @@ public class ConsoleMemoryLoader : MonoBehaviour
         MemoryCube removed = args.interactableObject.transform.GetComponentInParent<MemoryCube>();
         if (removed != null && GameProgress.IsCubeInConsole(removed.sceneName))
             GameProgress.SetCubeInConsole(null);
+
+        SetPlatformText(platformIdleText); // NEW: no cube = nowhere to go
 
         if (isLoading)
         {
@@ -126,8 +137,9 @@ public class ConsoleMemoryLoader : MonoBehaviour
         SetText(idleText);
     }
 
-    // ---------- Button ----------
+    // ---------- Platform ----------
 
+    // Called by MemoryPlatform when the hold finishes. (Name kept so old wiring still works.)
     public void OnButtonPressed()
     {
         if (buttonVisual != null) StartCoroutine(ButtonPressAnim());
@@ -137,11 +149,29 @@ public class ConsoleMemoryLoader : MonoBehaviour
 
         if (insertedCube == null)
         {
-            Reject("Button pressed with no valid memory in the socket.", "NO MEMORY INSERTED");
+            // NEW: player is on the platform, so show this error there
+            Reject("Platform activated with no valid memory in the socket.", "NO MEMORY INSERTED", true);
             return;
         }
 
         loadRoutine = StartCoroutine(LoadMemoryRoutine(insertedCube));
+    }
+
+    // NEW: MemoryPlatform calls this every frame while the player stands on it (p goes 0 -> 1).
+    public void ShowLinkProgress(float p)
+    {
+        if (insertedCube == null || isLoading || errorRoutine != null) return;
+
+        int filled = Mathf.RoundToInt(Mathf.Clamp01(p) * linkBarLength);
+        string bar = new string('#', filled) + new string('-', linkBarLength - filled);
+        SetPlatformText($"{insertedCube.memoryName}\nLINKING [{bar}]");
+    }
+
+    // NEW: MemoryPlatform calls this when the player steps off before it finishes.
+    public void CancelLinkProgress()
+    {
+        if (insertedCube == null || isLoading || errorRoutine != null) return;
+        SetPlatformText($"{insertedCube.memoryName}\nSTAND TO ENTER");
     }
 
     // ---------- Loading ----------
@@ -150,6 +180,7 @@ public class ConsoleMemoryLoader : MonoBehaviour
     {
         isLoading = true;
         PlaySound(startupSound);
+        SetText($"{cube.memoryName}\nIN USE"); // NEW: desk just says it's busy
 
         // Loading screen phase. Pulling the cube out during this cancels everything.
         float elapsed = 0f, dotTimer = 0f;
@@ -161,11 +192,11 @@ public class ConsoleMemoryLoader : MonoBehaviour
             if (dotTimer >= dotInterval) { dotTimer = 0f; dots = (dots + 1) % 4; }
 
             int percent = Mathf.RoundToInt(Mathf.Clamp01(elapsed / minLoadingTime) * 99f);
-            SetText($"LOADING MEMORY{new string('.', dots)}\n{cube.memoryName}\n{percent}%");
+            SetPlatformText($"LOADING MEMORY{new string('.', dots)}\n{cube.memoryName}\n{percent}%"); // NEW: platform
             yield return null;
         }
 
-        SetText($"LOADING MEMORY...\n{cube.memoryName}\n100%");
+        SetPlatformText($"LOADING MEMORY...\n{cube.memoryName}\n100%"); // NEW: platform
 
         // Fade/glitch transition goes here if you have one, e.g.:
         // yield return fader.FadeOut();
@@ -188,7 +219,7 @@ public class ConsoleMemoryLoader : MonoBehaviour
         {
             sceneLoadStarted = false;
             isLoading = false;
-            Reject($"Unity couldn't start loading '{cube.sceneName}'.", "MEMORY UNREADABLE");
+            Reject($"Unity couldn't start loading '{cube.sceneName}'.", "MEMORY UNREADABLE", true); // NEW: on platform
             yield break;
         }
         while (!op.isDone) yield return null;
@@ -212,12 +243,13 @@ public class ConsoleMemoryLoader : MonoBehaviour
         return null;
     }
 
-    private void Reject(string reason, string screenMessage)
+    // NEW: onPlatform = show the message on the platform screen instead of the desk
+    private void Reject(string reason, string screenMessage, bool onPlatform = false)
     {
         Debug.LogWarning($"Console rejected: {reason}");
         PlaySound(errorSound);
         StopError();
-        errorRoutine = StartCoroutine(ErrorBlinkRoutine(screenMessage));
+        errorRoutine = StartCoroutine(ErrorBlinkRoutine(screenMessage, onPlatform));
     }
 
     private void StopError()
@@ -226,9 +258,11 @@ public class ConsoleMemoryLoader : MonoBehaviour
         errorRoutine = null;
     }
 
-    private IEnumerator ErrorBlinkRoutine(string message)
+    private IEnumerator ErrorBlinkRoutine(string message, bool onPlatform)
     {
-        SetText(message);
+        if (onPlatform) SetPlatformText(message);
+        else SetText(message);
+
         for (int i = 0; i < errorBlinks; i++)
         {
             SetScreenGlow(errorColor * screenGlowIntensity);
@@ -237,13 +271,18 @@ public class ConsoleMemoryLoader : MonoBehaviour
             yield return new WaitForSeconds(errorBlinkSpeed);
         }
 
-        // Go back to whatever the screen should show now.
+        // Go back to whatever both screens should show now.
         if (insertedCube != null)
         {
             SetScreenGlow(insertedCube.memoryColor * screenGlowIntensity);
             SetText($"{insertedCube.memoryName}\nREADY");
+            SetPlatformText($"{insertedCube.memoryName}\nSTAND TO ENTER");
         }
-        else SetText(idleText);
+        else
+        {
+            SetText(idleText);
+            SetPlatformText(platformIdleText);
+        }
         errorRoutine = null;
     }
 
@@ -266,6 +305,12 @@ public class ConsoleMemoryLoader : MonoBehaviour
     private void SetText(string t)
     {
         if (screenText != null) screenText.text = t;
+    }
+
+    // NEW
+    private void SetPlatformText(string t)
+    {
+        if (platformText != null) platformText.text = t;
     }
 
     private void SetScreenGlow(Color c)

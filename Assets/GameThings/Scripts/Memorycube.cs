@@ -1,5 +1,8 @@
 using UnityEngine;
 
+// The three kinds of memory in the archive.
+public enum MemoryCategory { Self, Crew, Stranger }
+
 // Add this to your BASE memory cube prefab, then set the values on each variant.
 public class MemoryCube : MonoBehaviour
 {
@@ -11,4 +14,8 @@ public class MemoryCube : MonoBehaviour
 
     [Tooltip("Optional: matches the cube's frame color, used to tint the console screen on insert.")]
     public Color memoryColor = Color.cyan;
+
+    // NEW
+    [Tooltip("Shown on the Archiver's catalog panel.")]
+    public MemoryCategory category = MemoryCategory.Self;
 }
