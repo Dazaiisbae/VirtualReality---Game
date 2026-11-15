@@ -18,6 +18,16 @@ public static class GameProgress
         public bool fromMemory;  // taken in a memory world, goes to the tray
     }
 
+    // NEW: the story line that belongs to a photo, kept by photo ID.
+    [Serializable]
+    public class PhotoRecord
+    {
+        public string photoId;
+        public string sceneName; // the world it was taken in, used to sort it into a catalog section
+        public string line;      // the PhotoSpot's line
+        public bool filed;       // put into the polaroid machine
+    }
+
     [Serializable]
     class SaveData
     {
@@ -26,6 +36,7 @@ public static class GameProgress
         public List<PolaroidRecord> polaroids = new List<PolaroidRecord>();
         public List<string> collectedCubes = new List<string>();
         public string cubeInConsole;   // cube left plugged in when entering a memory
+        public List<PhotoRecord> photoRecords = new List<PhotoRecord>(); // NEW
     }
 
     static SaveData data;
@@ -50,6 +61,7 @@ public static class GameProgress
             if (data.capturedSpots == null) data.capturedSpots = new List<string>();
             if (data.polaroids == null) data.polaroids = new List<PolaroidRecord>();
             if (data.collectedCubes == null) data.collectedCubes = new List<string>();
+            if (data.photoRecords == null) data.photoRecords = new List<PhotoRecord>(); // NEW
             return data;
         }
     }
@@ -105,6 +117,43 @@ public static class GameProgress
         Save();
     }
 
+    // ---------- Photo records (NEW) ----------
+    public static PhotoRecord GetPhotoRecord(string photoId)
+    {
+        if (string.IsNullOrEmpty(photoId)) return null;
+        return Data.photoRecords.Find(r => r.photoId == photoId);
+    }
+
+    // Not saved straight away: it's written with the next save, same as the polaroid itself.
+    public static void SetPhotoRecord(string photoId, string sceneName, string line)
+    {
+        if (string.IsNullOrEmpty(photoId)) return;
+        PhotoRecord existing = GetPhotoRecord(photoId);
+        if (existing != null) { existing.sceneName = sceneName; existing.line = line; return; }
+        Data.photoRecords.Add(new PhotoRecord { photoId = photoId, sceneName = sceneName, line = line });
+    }
+
+    // Every record put into the machine, in the order they were filed.
+    public static List<PhotoRecord> FiledRecords => Data.photoRecords.FindAll(r => r.filed);
+
+    // A story polaroid went into the machine: mark it filed, keep its picture for the
+    // catalog thumbnails, and take it off the list of loose polaroids so it doesn't
+    // come back on the next load. Saves right away.
+    public static void FileRecord(string photoId, Texture2D photo)
+    {
+        PhotoRecord r = GetPhotoRecord(photoId);
+        if (r == null) return;
+        r.filed = true;
+
+        // Move it to the end so the catalog shows records in the order they were filed.
+        Data.photoRecords.Remove(r);
+        Data.photoRecords.Add(r);
+
+        if (photo != null) StorePhoto(photoId, photo);
+        Data.polaroids.RemoveAll(p => p.photoId == photoId);
+        Save();
+    }
+
     // ---------- Polaroids ----------
     public static IReadOnlyList<PolaroidRecord> Polaroids => Data.polaroids;
 
@@ -145,17 +194,21 @@ public static class GameProgress
         {
             Directory.CreateDirectory(PhotoFolder);
 
-            // Write any new photos to disk
+            // Write any new photos to disk: loose polaroids AND filed records
+            // (filed ones are kept so the catalog can show their thumbnails).
             var keep = new HashSet<string>();
-            foreach (var r in Data.polaroids)
+            void KeepPhoto(string id)
             {
-                keep.Add(r.photoId);
-                string path = PhotoPath(r.photoId);
-                if (!File.Exists(path) && photoCache.TryGetValue(r.photoId, out var tex) && tex != null)
+                if (string.IsNullOrEmpty(id)) return;
+                keep.Add(id);
+                string path = PhotoPath(id);
+                if (!File.Exists(path) && photoCache.TryGetValue(id, out var tex) && tex != null)
                     File.WriteAllBytes(path, tex.EncodeToPNG());
             }
+            foreach (var r in Data.polaroids) KeepPhoto(r.photoId);
+            foreach (var r in Data.photoRecords) if (r.filed) KeepPhoto(r.photoId);
 
-            // Delete photos that no longer belong to any polaroid
+            // Delete photos that no longer belong to anything
             foreach (var file in Directory.GetFiles(PhotoFolder, "*.png"))
                 if (!keep.Contains(Path.GetFileNameWithoutExtension(file)))
                     File.Delete(file);

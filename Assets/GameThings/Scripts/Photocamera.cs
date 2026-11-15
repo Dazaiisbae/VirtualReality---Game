@@ -84,6 +84,11 @@ public class PhotoCamera : MonoBehaviour
         polaroid.SetPhoto(photo);
         polaroid.SetGrabbable(false);
 
+        // NEW: save the spot's line onto this photo so the polaroid machine can read it later.
+        // Done right away (not after the eject) so it's saved even if the photo is grabbed early.
+        PersistentPolaroid persistent = polaroid.GetComponent<PersistentPolaroid>();
+        if (spot != null && persistent != null) persistent.SetRecord(spot.archiverLine);
+
         if (ejectSound != null) audioSource.PlayOneShot(ejectSound);
 
         Vector3 start = Vector3.zero;
