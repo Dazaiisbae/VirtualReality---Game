@@ -827,6 +827,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
@@ -888,6 +890,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
@@ -1182,6 +1186,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   extraFramePoints: []
+  showHint: 1
+  hintArea: {fileID: 0}
   onCaptured:
     m_PersistentCalls:
       m_Calls: []
@@ -1837,41 +1843,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1565874581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bc14dd4c7a396345b9e557a0a058446, type: 3}
+  m_Script: {fileID: 11500000, guid: 463154e003d9532438457115988a2f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Archive Room
---- !u!114 &1565874583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565874581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c80b18573e17c740a6bdc5836cd9aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdDuration: 0.5
-  visual: {fileID: 1565874586}
-  endScale: 1
-  hapticStrength: 0.3
-  onExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1565874582}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadTargetScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  sceneToLoad: Archive Room
+  delayBeforeFade: 0
+  fadeDuration: 1.5
+  fadeGroup: {fileID: 0}
+  shipAnimator: {fileID: 0}
 --- !u!65 &1565874584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1943,7 +1922,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1565874582}
+        m_TargetAssemblyTypeName: TitleStartSequence, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -1995,11 +1986,6 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!4 &1565874586 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f7a156a933dc227479e09627971a766d, type: 3}
-  m_PrefabInstance: {fileID: 2055249327}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1572508583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,7 +2053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46169e30a975a7140a79ec108ced8564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldID: CyberpunkCity
 --- !u!4 &1579142054
 Transform:
   m_ObjectHideFlags: 0
@@ -2310,9 +2295,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7a156a933dc227479e09627971a766d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1565874584}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7a156a933dc227479e09627971a766d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1565874583}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7a156a933dc227479e09627971a766d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1565874582}

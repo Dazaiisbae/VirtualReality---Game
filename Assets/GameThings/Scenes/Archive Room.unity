@@ -14604,6 +14604,10 @@ PrefabInstance:
       propertyPath: homeSocket
       value: 
       objectReference: {fileID: 7171572681124415455}
+    - target: {fileID: 3979389421499951331, guid: 5489e92f34469804fb799719c076a319, type: 3}
+      propertyPath: m_Depth
+      value: -8.83
+      objectReference: {fileID: 0}
     - target: {fileID: 7723907371345656152, guid: 5489e92f34469804fb799719c076a319, type: 3}
       propertyPath: m_Name
       value: InGameCamera_Root

@@ -19,13 +19,27 @@ public class ArchiveRoomPersistence : MonoBehaviour
 
     void RestorePolaroids()
     {
+        // FIX: say clearly what's wrong instead of failing silently
+        if (polaroidPrefab == null)
+        {
+            Debug.LogError("[ArchiveRoomPersistence] Polaroid Prefab isn't assigned in the Inspector.");
+            return;
+        }
+        if (trayPoint == null)
+            Debug.LogWarning("[ArchiveRoomPersistence] Tray Point isn't assigned. Memory photos will appear where they were taken instead.");
+
         int stack = 0;
         foreach (var r in GameProgress.Polaroids)
         {
             var tex = GameProgress.GetPhoto(r.photoId);
-            if (tex == null) continue;
+            if (tex == null)
+            {
+                Debug.LogWarning("[ArchiveRoomPersistence] Photo missing on restore: " + r.photoId);
+                continue;
+            }
 
-            bool toTray = r.fromMemory;
+            // FIX: a missing tray point used to crash this loop, so no memory photos came back
+            bool toTray = r.fromMemory && trayPoint != null;
             Vector3 pos = toTray ? trayPoint.position + trayPoint.up * stackSpacing * stack++ : r.position;
             Quaternion rot = toTray ? trayPoint.rotation : r.rotation;
 
@@ -35,7 +49,7 @@ public class ArchiveRoomPersistence : MonoBehaviour
             if (r.scale != Vector3.zero) p.transform.localScale = r.scale;
 
             // Tray photos are held in place until grabbed, like pinned ones.
-            p.Restore(r.photoId, tex, toTray || r.stuck);
+            p.Restore(r.photoId, tex, r.fromMemory || r.stuck);
         }
     }
 
