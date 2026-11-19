@@ -18,6 +18,16 @@ public static class GameProgress
         public bool fromMemory;  // taken in a memory world, goes to the tray
     }
 
+    // The story line that belongs to a photo, kept by photo ID.
+    [Serializable]
+    public class PhotoRecord
+    {
+        public string photoId;
+        public string sceneName; // the world it was taken in, used to sort it into a catalog section
+        public string line;      // the PhotoSpot's line
+        public bool filed;       // put into the polaroid machine
+    }
+
     [Serializable]
     class SaveData
     {
@@ -26,6 +36,7 @@ public static class GameProgress
         public List<PolaroidRecord> polaroids = new List<PolaroidRecord>();
         public List<string> collectedCubes = new List<string>();
         public string cubeInConsole;   // cube left plugged in when entering a memory
+        public List<PhotoRecord> photoRecords = new List<PhotoRecord>();
     }
 
     static SaveData data;
@@ -50,6 +61,7 @@ public static class GameProgress
             if (data.capturedSpots == null) data.capturedSpots = new List<string>();
             if (data.polaroids == null) data.polaroids = new List<PolaroidRecord>();
             if (data.collectedCubes == null) data.collectedCubes = new List<string>();
+            if (data.photoRecords == null) data.photoRecords = new List<PhotoRecord>();
             return data;
         }
     }
@@ -105,6 +117,43 @@ public static class GameProgress
         Save();
     }
 
+    // ---------- Photo records ----------
+    public static PhotoRecord GetPhotoRecord(string photoId)
+    {
+        if (string.IsNullOrEmpty(photoId)) return null;
+        return Data.photoRecords.Find(r => r.photoId == photoId);
+    }
+
+    // Not saved straight away: it's written with the next save, same as the polaroid itself.
+    public static void SetPhotoRecord(string photoId, string sceneName, string line)
+    {
+        if (string.IsNullOrEmpty(photoId)) return;
+        PhotoRecord existing = GetPhotoRecord(photoId);
+        if (existing != null) { existing.sceneName = sceneName; existing.line = line; return; }
+        Data.photoRecords.Add(new PhotoRecord { photoId = photoId, sceneName = sceneName, line = line });
+    }
+
+    // Every record put into the machine, in the order they were filed.
+    public static List<PhotoRecord> FiledRecords => Data.photoRecords.FindAll(r => r.filed);
+
+    // A story polaroid went into the machine: mark it filed, keep its picture for the
+    // catalog thumbnails, and take it off the list of loose polaroids so it doesn't
+    // come back on the next load. Saves right away.
+    public static void FileRecord(string photoId, Texture2D photo)
+    {
+        PhotoRecord r = GetPhotoRecord(photoId);
+        if (r == null) return;
+        r.filed = true;
+
+        // Move it to the end so the catalog shows records in the order they were filed.
+        Data.photoRecords.Remove(r);
+        Data.photoRecords.Add(r);
+
+        if (photo != null) StorePhoto(photoId, photo);
+        Data.polaroids.RemoveAll(p => p.photoId == photoId);
+        Save();
+    }
+
     // ---------- Polaroids ----------
     public static IReadOnlyList<PolaroidRecord> Polaroids => Data.polaroids;
 
@@ -120,9 +169,24 @@ public static class GameProgress
         else Data.polaroids.Add(record);
     }
 
+    // FIX: keeps its OWN readable copy of the photo and writes it to disk right away.
+    // Before, it only kept a reference to the camera's texture. If that texture got
+    // destroyed when the memory scene unloaded, or its format couldn't be saved as a
+    // PNG (which can happen after changing platform or render settings), the photo
+    // was lost and the archive room silently skipped it.
     public static void StorePhoto(string photoId, Texture2D tex)
     {
-        photoCache[photoId] = tex;
+        if (string.IsNullOrEmpty(photoId) || tex == null) return;
+
+        // Already have this photo saved, nothing to do
+        if (photoCache.TryGetValue(photoId, out var existing) && existing != null && File.Exists(PhotoPath(photoId)))
+            return;
+
+        Texture2D copy = MakeReadableCopy(tex);
+        if (copy == null) return;
+
+        photoCache[photoId] = copy;
+        WritePhoto(photoId, copy);
     }
 
     public static Texture2D GetPhoto(string photoId)
@@ -138,6 +202,48 @@ public static class GameProgress
         return tex;
     }
 
+    // FIX: copies any texture (readable or not, any format) into a plain RGBA32 texture
+    // by drawing it onto a temporary render texture and reading the pixels back.
+    static Texture2D MakeReadableCopy(Texture src)
+    {
+        try
+        {
+            RenderTexture rt = RenderTexture.GetTemporary(src.width, src.height, 0,
+                RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
+            RenderTexture previous = RenderTexture.active;
+
+            Graphics.Blit(src, rt);
+            RenderTexture.active = rt;
+
+            var copy = new Texture2D(src.width, src.height, TextureFormat.RGBA32, false);
+            copy.ReadPixels(new Rect(0, 0, src.width, src.height), 0, 0);
+            copy.Apply();
+
+            RenderTexture.active = previous;
+            RenderTexture.ReleaseTemporary(rt);
+            return copy;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("[GameProgress] Couldn't copy photo: " + e.Message);
+            return null;
+        }
+    }
+
+    // FIX: writes one photo, and shows a red error (not a hidden warning) if it fails.
+    static void WritePhoto(string photoId, Texture2D tex)
+    {
+        try
+        {
+            Directory.CreateDirectory(PhotoFolder);
+            File.WriteAllBytes(PhotoPath(photoId), tex.EncodeToPNG());
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("[GameProgress] Couldn't write photo " + photoId + ": " + e.Message);
+        }
+    }
+
     // ---------- Save / Load ----------
     public static void Save()
     {
@@ -145,17 +251,21 @@ public static class GameProgress
         {
             Directory.CreateDirectory(PhotoFolder);
 
-            // Write any new photos to disk
+            // Make sure every photo that belongs to something is on disk:
+            // loose polaroids AND filed records (kept for the catalog thumbnails).
             var keep = new HashSet<string>();
-            foreach (var r in Data.polaroids)
+            void KeepPhoto(string id)
             {
-                keep.Add(r.photoId);
-                string path = PhotoPath(r.photoId);
-                if (!File.Exists(path) && photoCache.TryGetValue(r.photoId, out var tex) && tex != null)
-                    File.WriteAllBytes(path, tex.EncodeToPNG());
+                if (string.IsNullOrEmpty(id)) return;
+                keep.Add(id);
+                if (!File.Exists(PhotoPath(id)) && photoCache.TryGetValue(id, out var tex) && tex != null)
+                    WritePhoto(id, tex); // FIX: one bad photo no longer stops the whole save
             }
+            foreach (var r in Data.polaroids) KeepPhoto(r.photoId);
+            foreach (var r in Data.photoRecords) if (r.filed) KeepPhoto(r.photoId);
 
-            // Delete photos that no longer belong to any polaroid
+            // Delete photos that no longer belong to anything.
+            // (Photos still in the cache get rewritten by the next save if needed.)
             foreach (var file in Directory.GetFiles(PhotoFolder, "*.png"))
                 if (!keep.Contains(Path.GetFileNameWithoutExtension(file)))
                     File.Delete(file);
@@ -164,7 +274,7 @@ public static class GameProgress
         }
         catch (Exception e)
         {
-            Debug.LogWarning("[GameProgress] Save failed: " + e.Message);
+            Debug.LogError("[GameProgress] Save failed: " + e.Message); // FIX: red error, easy to spot
         }
     }
 

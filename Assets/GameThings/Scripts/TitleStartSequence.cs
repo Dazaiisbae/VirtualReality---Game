@@ -57,7 +57,7 @@ public class TitleStartSequence : MonoBehaviour
             }
             fadeGroup.alpha = 1f;
         }
-
+        MemoryPhotoSaver.SaveAll();
         SceneManager.LoadScene(sceneToLoad);
     }
 }
